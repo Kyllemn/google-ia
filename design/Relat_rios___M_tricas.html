@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-e-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant border border-dashed border-outline-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span>+ Novo Módulo / Configurações</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Header & Actions Section -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">
+<span>Analytics</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Relatórios Gerenciais</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Relatórios &amp; Métricas</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Visão consolidada de performance comercial, conversão de leads e retenção de carteiras
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Period Selector Dropdown -->
+<div class="relative inline-flex items-center">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-3 pr-8 py-2 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
+<option selected="">Últimos 30 dias</option>
+<option>Este Mês (Atual)</option>
+<option>Ano 2024</option>
+<option>Último Trimestre</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 text-[18px] text-on-surface-variant">calendar_today</span>
+</div>
+<!-- Advanced Filters Button -->
+<button class="flex items-center gap-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3.5 py-2 rounded-xl shadow-sm hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Filtros Avançados</span>
+</button>
+<!-- Primary Export Button -->
+<button class="flex items-center gap-space-xs bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-xl shadow-md hover:bg-primary transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exportar Relatório (PDF/XLS)</span>
+</button>
+</div>
+</div>
+<!-- 4 KPI Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Taxa Geral de Conversão -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wide">Taxa de Conversão</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">26.8%</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>
+            +3.2%
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs mês anterior</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Faturamento Total em Negociação -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wide">Em Negociação</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">R$ 1.840.500</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">42 propostas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">em andamento</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Tempo Médio de Primeiro Contato -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wide">Primeiro Contato</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">14 min</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span>
+            -6 min
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">meta máx: 20 min</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Retenção de Clientes (Churn) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wide">Retenção de Carteira</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">97.4%</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Excelente</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">baixo churn</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column (Span 7) -->
+<div class="lg:col-span-7 flex flex-col space-y-space-lg">
+<!-- Funil de Vendas Visualização -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Funil de Conversão Comercial</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Passagem e eficiência por fase do ciclo de negociação</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold">
+            Ciclo Médio: 18d
+          </span>
+</div>
+<div class="space-y-4 pt-2">
+<!-- Estágio 1 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1</span>
+<span class="font-label-lg text-label-lg text-on-surface">Contatos Recebidos</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant">Drop: 0%</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">340</span>
+</div>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Estágio 2 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">2</span>
+<span class="font-label-lg text-label-lg text-on-surface">Contato Iniciado</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">72.9% conversão</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-error">Perda: -27.1%</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">248</span>
+</div>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 72.9%;"></div>
+</div>
+</div>
+<!-- Estágio 3 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">3</span>
+<span class="font-label-lg text-label-lg text-on-surface">Proposta Enviada</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">45.1% avanço</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-error">Perda: -54.9%</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">112</span>
+</div>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-500" style="width: 45.1%;"></div>
+</div>
+</div>
+<!-- Estágio 4 -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">4</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Fechamento Concluído</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">37.5% ganho final</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">42 contratos</span>
+<span class="font-title-md text-title-md font-bold text-primary">R$ 1.84M</span>
+</div>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500" style="width: 37.5%;"></div>
+</div>
+</div>
+</div>
+<!-- Inline Visual Funnel Bar Metric Highlights -->
+<div class="mt-6 pt-4 grid grid-cols-3 gap-2 bg-surface-container-low rounded-xl p-3">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Total Início</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">340 Leads</span>
+</div>
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Taxa Global</span>
+<span class="font-title-md text-title-md font-bold text-primary">12.3% Funil</span>
+</div>
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Ganhos Efetivos</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">42 Clientes</span>
+</div>
+</div>
+</div>
+<!-- Origem de Leads e Eficiência de Canal (Tabela) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg pb-space-sm flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Origem de Leads &amp; Eficiência</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Custo por aquisição, conversão e reuniões por origem</p>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline">Ver Detalhado</button>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Canal / Origem</th>
+<th class="py-3 px-space-md text-right">Leads</th>
+<th class="py-3 px-space-md text-right">Reuniões</th>
+<th class="py-3 px-space-md text-right">Vendas</th>
+<th class="py-3 px-space-md text-right">Custo / Lead</th>
+<th class="py-3 px-space-md text-right">ROAS</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container-low">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md font-label-lg text-label-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Meta Ads (Instagram/FB)</span>
+</td>
+<td class="py-3 px-space-md text-right font-medium">138</td>
+<td class="py-3 px-space-md text-right">54</td>
+<td class="py-3 px-space-md text-right font-bold text-on-surface">18</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-body-sm">R$ 28,40</td>
+<td class="py-3 px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">5.8x</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md font-label-lg text-label-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>RD Station (Inbound)</span>
+</td>
+<td class="py-3 px-space-md text-right font-medium">92</td>
+<td class="py-3 px-space-md text-right">41</td>
+<td class="py-3 px-space-md text-right font-bold text-on-surface">12</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-body-sm">R$ 42,10</td>
+<td class="py-3 px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">4.2x</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md font-label-lg text-label-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>WhatsApp API Direto</span>
+</td>
+<td class="py-3 px-space-md text-right font-medium">58</td>
+<td class="py-3 px-space-md text-right">32</td>
+<td class="py-3 px-space-md text-right font-bold text-on-surface">7</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-body-sm">R$ 15,30</td>
+<td class="py-3 px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">6.1x</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md font-label-lg text-label-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span>Site Orgânico / Webhook</span>
+</td>
+<td class="py-3 px-space-md text-right font-medium">34</td>
+<td class="py-3 px-space-md text-right">16</td>
+<td class="py-3 px-space-md text-right font-bold text-on-surface">3</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-body-sm">R$ 0,00</td>
+<td class="py-3 px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">∞</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md font-label-lg text-label-lg flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span>Indicação de Clientes</span>
+</td>
+<td class="py-3 px-space-md text-right font-medium">18</td>
+<td class="py-3 px-space-md text-right">15</td>
+<td class="py-3 px-space-md text-right font-bold text-on-surface">2</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-body-sm">R$ 0,00</td>
+<td class="py-3 px-space-md text-right">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">∞</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column (Span 5) -->
+<div class="lg:col-span-5 flex flex-col space-y-space-lg">
+<!-- Performance por Consultor / Vendedor -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Ranking Comercial</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top consultores por volume e meta atingida</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+</div>
+<div class="space-y-4">
+<!-- Consultor 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Portrait of commercial executive Mariana Silva wearing corporate navy attire against clean office background, confident, natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjJqMFOuK0-MSQRgF5objfIoTAJv-zq_JbbB-A_NG-NfEvgyUhkjlyPo-2fmAaP4XAC1oIK2GZZoqrHk3EkgmhWZzhQs-Atl0xJ2b8fLgcF3Yx6NPh-AgMgUq_ZdNe1DwYhHJ1PSwXGj1gNY2U83c2iBawgFo88B3g-y9dP6aB9mFpGZ9BeZFsr9yRSOTj5bAOUbNipNyRL3jmEIpO2TVe78K7cG8sO36iAt4T35D1"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">1</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Mariana Silva</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carteira Enterprise (16 negócios)</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md font-bold text-primary">118%</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">R$ 680k</span>
+</div>
+</div>
+<div class="mt-2.5 w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Consultor 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Professional studio headshot of male sales specialist Rafael Mendes, smiling, wearing business casual gray shirt with modern lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwnB9i9TQsoqwjDwTs3mU22JIvS0pt7fZtn3bWaIS7HWqC0PGPgBk3F8ZfeB3hmZYVpOpIfReW3_l9rL-o5F3doW8r5SKzQW6Vge9nlnuQ5Tqb85C2aQGac9GvqB8Jwhp4W7eQVZKsuUZvKUQGeR2G4gqc8o_UMAZqx-JkgQWVq5Orjwgj17ETel9gdku_6l9KpSoccAsi6SJTU1jrSnHYDr-nVnISr1mchSgp0Zp-"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[10px] flex items-center justify-center font-bold">2</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Rafael Mendes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carteira Mid-Market (14 negócios)</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md font-bold text-on-surface">104%</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">R$ 540k</span>
+</div>
+</div>
+<div class="mt-2.5 w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Consultor 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Headshot of female account executive Camila Torres with subtle warm studio lighting, professional and approachable aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdMaOSOgFNghtWbXXl-7C8e9TQLhcZxjpBXvlklm9bEiUPmeGyrbFEieUNVxMOAeUQkhYQ5tDB_sl575mLcurobSg-28GD8vmA6VPlRmBHKTdwtKq1EExz-1lznZZB8ap3bc6-caRwZTtUO1byCAlHzzBD2BJ-q-kkbcddiInK47cBHZIqutm9r_S7CoVIX2vTZs9kcxYek0CtxRgQbjOeSyIUN-SYkNM9FCG3Pzse"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[10px] flex items-center justify-center font-bold">3</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Camila Torres</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carteira PME &amp; Inbound (12 negócios)</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md font-bold text-on-surface">95%</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">R$ 410k</span>
+</div>
+</div>
+<div class="mt-2.5 w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Motivos de Inativação de Carteiras -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Inativação de Carteiras</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Distribuição percentual de motivos de cancelamento</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Total: 2.6%
+          </span>
+</div>
+<!-- Visual Donut Chart Simulation (Inline SVG) -->
+<div class="flex items-center justify-center py-2">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Circle -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#eff4ff" stroke-width="12"></circle>
+<!-- Segment 1: Pausa Temporária 45% (dasharray ~107) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#2563eb" stroke-dasharray="107.4 238.7" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Segment 2: Sem Retorno 35% (dasharray ~83.5) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#708cfd" stroke-dasharray="83.5 238.7" stroke-dashoffset="-107.4" stroke-width="12"></circle>
+<!-- Segment 3: Contrato Encerrado 20% (dasharray ~47.7) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#cbdbf5" stroke-dasharray="47.7 238.7" stroke-dashoffset="-190.9" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">2.6%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Taxa Churn</span>
+</div>
+</div>
+</div>
+<!-- Legend and Breakdown -->
+<div class="mt-4 space-y-2 pt-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2 rounded-lg bg-surface-container-low/40">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="text-on-surface font-medium">Pausa Temporária / Ajuste Interno</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">45%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2 rounded-lg bg-surface-container-low/40">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="text-on-surface font-medium">Sem Retorno / Contato Perdido</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">35%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2 rounded-lg bg-surface-container-low/40">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-surface-dim"></span>
+<span class="text-on-surface font-medium">Contrato Encerrado / Fim de Ciclo</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">20%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

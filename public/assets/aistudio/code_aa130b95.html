@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Financeiro &amp; Fiscal</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recuperacao-tributaria" href="#"><span>Recuperação Tributária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="importacao-sped-xml" href="#"><span>Importação SPED / XML</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laudo-tecnico-memoria-de-calculo" href="#"><span>Laudo Técnico &amp; Memória de Cálculo</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="transmissao-perdcomp-web" href="#"><span>Transmissão PER/DCOMP Web</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="conciliacao-bancaria" href="#"><span>Conciliação Bancária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="intimacoes-prazos-e-cac" href="#"><span>Intimações &amp; Prazos e-CAC</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auditoria-dctfweb-efd" href="#"><span>Auditoria DCTFWeb x EFD</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contratos-honorarios-exito" href="#"><span>Contratos &amp; Honorários no Êxito</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Quick Tracker Strip -->
+<div class="flex flex-wrap items-center justify-between gap-y-space-sm mb-space-md">
+<nav aria-label="Navegação hierárquica" class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Financeiro &amp; Fiscal</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Caixa Postal &amp; Contencioso Administrativo</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Intimações &amp; Prazos e-CAC</span>
+</nav>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-on-surface font-medium">Gateway e-CAC v4.8</span>
+<span class="text-outline">|</span>
+<span>Procurações Digitais Ativas: <strong class="text-on-surface">18/18</strong></span>
+</div>
+</div>
+<!-- Header Section with Title, Subtitle, and Top Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md pb-space-lg">
+<div class="space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-space-sm">
+        Intimações &amp; Prazos Processuais e-CAC
+        <span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-bold tracking-wider">RFB / PGFN</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Monitoramento automatizado por robô de varredura na Caixa Postal da Receita Federal e PGFN com contagem regressiva de prazos fatais e controle de ciência tácita (Lei nº 11.196/05).
+      </p>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-center">
+<!-- Sync Button with Last Sync status tooltip/badge -->
+<div class="flex items-center bg-surface-container-lowest shadow-sm rounded-xl px-3 py-1.5 gap-space-sm">
+<button class="flex items-center gap-1.5 text-on-surface hover:text-primary font-label-lg text-label-lg transition-colors" id="btn-sync" title="Forçar consulta imediata nos WebServices da RFB" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" id="sync-icon">sync</span>
+<span class="font-semibold">Sincronizar e-CAC Agora</span>
+</button>
+<span class="text-[11px] font-label-sm text-on-surface-variant pl-1 border-l border-outline-variant">Varredura há 12 min</span>
+</div>
+<!-- Certificate Selector -->
+<div class="relative">
+<select aria-label="Seletor de Procuração Digital" class="h-[38px] pl-3 pr-8 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none cursor-pointer">
+<option selected="">Todos os 18 CNPJs Vinculados</option>
+<option>14.892.411/0001-92 - Ramos Indústria</option>
+<option>22.441.512/0002-80 - Aliança Alimentos</option>
+<option>03.119.827/0001-19 - Agro Vale do Sol</option>
+<option>08.231.902/0003-45 - Farmácias São João</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+<!-- Primary Action -->
+<button class="flex items-center gap-1.5 h-[38px] px-space-md rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all shadow-primary-container/20" type="button">
+<span class="material-symbols-outlined text-[18px]">alarm_add</span>
+<span>+ Cadastrar Alerta de Prazo</span>
+</button>
+</div>
+</div>
+<!-- Critical Spotlight Banner (Item 5) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-error-container via-surface-container-lowest to-surface-container-low shadow-sm p-space-md lg:p-space-lg mb-space-lg">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-error/5 blur-2xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error text-on-error flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[26px]">fmd_bad</span>
+</div>
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error text-on-error uppercase font-bold tracking-wider">Urgência Crítica • 4 Dias Restantes</span>
+<span class="font-label-sm text-label-sm text-on-error-container font-mono">Proc: 10830.720194/2024-11</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Despacho Decisório - Termo de Intimação Fiscal nº 49102/2024
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+            Manifestação de Inconformidade referente à glosa de crédito de PIS/COFINS expira fatalmente em <strong class="text-error font-semibold">28/10/2024</strong>. 
+            Empresa: <span class="text-on-surface font-semibold">Indústria Metalúrgica Ramos Ltda</span> (14.892.411/0001-92). 
+            Valor em litígio: <strong class="text-on-surface font-mono font-semibold">R$ 142.500,00</strong>.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0 self-stretch lg:self-center justify-end">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">picture_as_pdf</span>
+<span>Visualizar Inteiro Teor (PDF)</span>
+</button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-primary text-on-primary hover:bg-on-primary-fixed-variant font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">person_check</span>
+<span>Atribuir ao Advogado Tributarista</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metric Cards Grid (Item 4) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Prazos Críticos -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-error font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+          Prazos Críticos (&lt; 5 dias)
+        </span>
+<span class="material-symbols-outlined text-error text-[20px]">timer</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">03</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Ação Imediata</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Intimações em contagem regressiva fatal (ex: Defesa de Glosa de PER/DCOMP).
+      </p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- Card 2: Intimações Pendentes de Ciência -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary-container font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+          Pendentes de Ciência
+        </span>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">mark_email_unread</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">07</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Tácito &lt; 15 dias</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Aguardando abertura manual ou decurso de prazo legal de 15 dias corridos.
+      </p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<!-- Card 3: Mensagens Lidas este Mês -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          Comunicações no Mês
+        </span>
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">42</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">+18% vs Set</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Homologações, notas e intimações auditadas e arquivadas com recibo e-CAC.
+      </p>
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Card 4: Robô de Varredura e-CAC -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Robô de Varredura e-CAC
+        </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">smart_toy</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-xs">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface">100%</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-bold">ONLINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Ciclos a cada 2h via Certificado A1. Próxima varredura programada em 1h 48m.
+      </p>
+<div class="flex items-center gap-2 mt-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-emerald-700 font-medium">SSL OK</span>
+<span>•</span>
+<span>Token PGFN Válido</span>
+</div>
+</div>
+</div>
+<!-- Operational Context Panel & Team Assignment Visualizer -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md mb-space-lg">
+<!-- Visual Countdown Sparkline & Risk Breakdown -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm lg:col-span-2 flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-space-sm">
+<div>
+<div class="font-title-md text-title-md text-on-surface font-bold">Distribuição Temporal dos Prazos Ativos</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Janela de risco processual para defesas, impugnações e recursos nas DRJs / CARF.</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold bg-surface-container-low px-2.5 py-1 rounded-full">Total: 18 Obrigações</span>
+</div>
+<!-- Inline SVG Visual Timeline / Chart -->
+<div class="w-full py-2">
+<svg aria-label="Linha do tempo de vencimentos de intimações" class="w-full h-24 overflow-visible" preserveaspectratio="none" viewbox="0 0 600 70">
+<line class="text-surface-container-highest" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="10" x2="590" y1="45" y2="45"></line>
+<!-- Area Critical: 0 - 5 days -->
+<rect class="fill-error/20" height="14" rx="7" width="130" x="10" y="38"></rect>
+<circle class="fill-error stroke-surface-container-lowest" cx="60" cy="45" r="9" stroke-width="3"></circle>
+<text class="fill-error font-mono font-bold text-[12px]" text-anchor="middle" x="60" y="24">D-4 (142,5k)</text>
+<circle class="fill-error stroke-surface-container-lowest" cx="110" cy="45" r="7" stroke-width="2"></circle>
+<text class="fill-error font-mono font-semibold text-[10px]" text-anchor="middle" x="110" y="24">D-5</text>
+<!-- Area Medium: 6 - 15 days -->
+<circle class="fill-tertiary-container stroke-surface-container-lowest" cx="210" cy="45" r="8" stroke-width="2"></circle>
+<text class="fill-tertiary-container font-mono font-semibold text-[11px]" text-anchor="middle" x="210" y="24">D-8 (Multa)</text>
+<circle class="fill-primary stroke-surface-container-lowest" cx="310" cy="45" r="8" stroke-width="2"></circle>
+<text class="fill-primary font-mono font-semibold text-[11px]" text-anchor="middle" x="310" y="24">D-12 (DCTF)</text>
+<circle class="fill-secondary stroke-surface-container-lowest" cx="430" cy="45" r="6" stroke-width="2"></circle>
+<text class="fill-secondary font-mono text-[10px]" text-anchor="middle" x="430" y="24">D-15</text>
+<circle class="fill-secondary stroke-surface-container-lowest" cx="540" cy="45" r="6" stroke-width="2"></circle>
+<text class="fill-secondary font-mono text-[10px]" text-anchor="middle" x="540" y="24">D-22</text>
+<!-- Time Markers labels -->
+<text class="fill-outline text-[10px] uppercase font-bold" x="10" y="65">Hoje</text>
+<text class="fill-error text-[10px] font-bold" x="140" y="65">Janela Fatal (5d)</text>
+<text class="fill-outline text-[10px]" x="360" y="65">15 Dias (Ciência Tácita)</text>
+<text class="fill-outline text-[10px]" x="550" y="65">30 Dias (Limite Defesa)</text>
+</svg>
+</div>
+<div class="flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2 border-t border-outline-variant">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-error"></span> 3 Fatais (R$ 389.200 em risco)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-tertiary-container"></span> 4 Em elaboração recursal</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-primary"></span> 11 Aguardando manifestação fiscal</span>
+</div>
+</div>
+<!-- Legal Regulatory Notice Card (Item 8) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase font-bold tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+          Regulamentação Legal
+        </div>
+<div class="font-title-md text-title-md text-on-surface font-semibold mb-1">
+          Regra da Ciência Tácita RFB
+        </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">
+          Conforme a <strong class="text-on-surface">Lei Federal nº 11.196/2005 (Art. 23)</strong> e Portaria RFB nº 2.022, a contagem de <strong>15 dias corridos</strong> para ciência tácita tem início no primeiro dia útil subsequente à data de disponibilização da comunicação na Caixa Postal do e-CAC.
+        </p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface font-semibold mb-1">
+<span>Início do Prazo Recursal:</span>
+<span class="text-tertiary">D+1 da Ciência Efetiva</span>
+</div>
+<p class="text-[11px] font-body-sm text-on-surface-variant">
+          O sistema congela o contador assim que o usuário realiza a leitura com assinatura ou no 15º dia corrido às 23:59.
+        </p>
+</div>
+</div>
+</div>
+<!-- Filters, Navigation Tabs and Search Bar (Item 6) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-md space-y-space-md">
+<!-- Tabs Header -->
+<div class="flex flex-wrap items-center justify-between border-b border-outline-variant gap-y-2">
+<div class="flex flex-wrap items-center gap-space-xs -mb-px">
+<button class="tab-btn active px-4 py-2.5 border-b-2 border-primary font-label-lg text-label-lg text-primary font-bold flex items-center gap-2" type="button">
+<span>Todas as Notificações</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">18</span>
+</button>
+<button class="tab-btn px-4 py-2.5 border-b-2 border-transparent font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Prazos Fatais &amp; Intimações</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">5</span>
+</button>
+<button class="tab-btn px-4 py-2.5 border-b-2 border-transparent font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Termos de Homologação</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">8</span>
+</button>
+<button class="tab-btn px-4 py-2.5 border-b-2 border-transparent font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Comunicações Gerais</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">5</span>
+</button>
+</div>
+<!-- Quick Export & View Switcher -->
+<div class="flex items-center gap-2 py-1">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Exportar Dossiê (.XLSX)</span>
+</button>
+<button class="p-1.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" title="Atualizar dados da tabela" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+</div>
+</div>
+<!-- Filter Inputs Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search Field (Span 5) -->
+<div class="lg:col-span-5 relative">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-3 top-2.5">search</span>
+<input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-all" id="table-search" placeholder="Buscar por Razão Social, CNPJ (com ou sem pontuação), nº de intimação ou processo..." type="text"/>
+</div>
+<!-- Status Ciência Filter (Span 3) -->
+<div class="lg:col-span-3 relative">
+<select aria-label="Filtrar por Status de Ciência" class="w-full h-[38px] pl-3 pr-8 rounded-xl bg-surface border border-outline-variant font-label-lg text-label-lg text-on-surface focus:outline-none focus:border-primary appearance-none cursor-pointer" id="status-filter">
+<option value="">Status da Ciência: Todos</option>
+<option value="critico">Pendente de Leitura (Urgente)</option>
+<option value="ciencia">Ciência Tomada</option>
+<option value="aberto">Prazo Recursal Aberto</option>
+<option value="respondido">Respondido / Homologado</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+<!-- Date Period / Range (Span 2) -->
+<div class="lg:col-span-2 relative">
+<select aria-label="Filtrar por Período de Recebimento" class="w-full h-[38px] pl-3 pr-8 rounded-xl bg-surface border border-outline-variant font-label-lg text-label-lg text-on-surface focus:outline-none focus:border-primary appearance-none cursor-pointer">
+<option>Últimos 30 Dias</option>
+<option>Últimos 60 Dias</option>
+<option>Ano Atual (2024)</option>
+<option>Personalizado</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">date_range</span>
+</div>
+<!-- Clear / Batch Action Button (Span 2) -->
+<div class="lg:col-span-2 flex items-center justify-end gap-2">
+<button class="w-full h-[38px] px-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" id="btn-batch-ack" type="button">
+<span class="material-symbols-outlined text-[16px]">checklist_rtl</span>
+<span>Dar Ciência em Lote</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Detailed Notifications Table (Item 7) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="py-3 px-4 w-10">
+<input aria-label="Selecionar todas as intimações" class="w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" id="check-all" type="checkbox"/>
+</th>
+<th class="py-3 px-3 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Urgência / Prazo Restante</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Empresa / CNPJ</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Tipo de Ato / Mensagem RFB</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Nº Processo / Notificação</th>
+<th class="py-3 px-3 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Data Recebimento</th>
+<th class="py-3 px-3 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Ciência Tácita / Limite</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant font-body-sm text-body-sm text-on-surface" id="table-body">
+<!-- Row 1: Indústria Metalúrgica Ramos Ltda -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<input aria-label="Selecionar linha Ramos" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold animate-pulse">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  4 dias restantes
+                </span>
+</div>
+<div class="text-[11px] font-mono text-error font-medium mt-0.5">Expira: 28/10/2024 às 23:59</div>
+</td>
+<td class="py-3.5 px-4 min-w-[200px]">
+<div class="font-title-md text-title-md font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Indústria Metalúrgica Ramos Ltda
+              </div>
+<div class="font-mono text-label-md text-label-md text-on-surface-variant">
+                14.892.411/0001-92
+              </div>
+<div class="text-[11px] text-tertiary font-medium">Contencioso: Glosa R$ 142.500,00</div>
+</td>
+<td class="py-3.5 px-4 min-w-[220px]">
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">gavel</span>
+                Despacho Decisório - Glosa Parcial
+              </div>
+<div class="text-on-surface-variant text-[12px] line-clamp-1">
+                PER/DCOMP 2024.912.441-A • PIS/COFINS Não Cumulativo
+              </div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface">10830.720194/2024-11</div>
+<div class="text-[11px] text-on-surface-variant font-mono">Notif: 49102/2024-RFB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="font-medium text-on-surface">14/10/2024</div>
+<div class="text-[11px] text-outline font-mono">10:42:19</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold inline-block">
+                Ciência Tomada
+              </div>
+<div class="text-[11px] text-on-surface-variant mt-0.5">Por: Dr. Marcos A. (OAB/SP)</div>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Abrir Processo</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Visualizar Notificação" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Distribuidora Aliança de Alimentos -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<input aria-label="Selecionar linha Aliança" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  Concluído (0d)
+                </span>
+</div>
+<div class="text-[11px] font-mono text-emerald-700 font-medium mt-0.5">Sem pendências recursais</div>
+</td>
+<td class="py-3.5 px-4 min-w-[200px]">
+<div class="font-title-md text-title-md font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Distribuidora Aliança de Alimentos
+              </div>
+<div class="font-mono text-label-md text-label-md text-on-surface-variant">
+                22.441.512/0002-80
+              </div>
+<div class="text-[11px] text-emerald-700 font-medium">Crédito Liberado: R$ 88.420,15</div>
+</td>
+<td class="py-3.5 px-4 min-w-[220px]">
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">verified</span>
+                Termo de Homologação Integral
+              </div>
+<div class="text-on-surface-variant text-[12px] line-clamp-1">
+                Compensação Tributária Aprovada 100% • IRPJ/CSLL
+              </div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface">13914.882011/2024-05</div>
+<div class="text-[11px] text-on-surface-variant font-mono">DCOMP: 33819.00912</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="font-medium text-on-surface">20/10/2024</div>
+<div class="text-[11px] text-outline font-mono">16:15:02</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold inline-block">
+                Homologado 100%
+              </div>
+<div class="text-[11px] text-on-surface-variant mt-0.5">Ciência Automática Concluída</div>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Baixar Despacho</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Mais Opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Agropecuária Vale do Sol Eireli -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<input aria-label="Selecionar linha Vale do Sol" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  12 dias restantes
+                </span>
+</div>
+<div class="text-[11px] font-mono text-on-surface-variant mt-0.5">Vencimento: 05/11/2024</div>
+</td>
+<td class="py-3.5 px-4 min-w-[200px]">
+<div class="font-title-md text-title-md font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Agropecuária Vale do Sol Eireli
+              </div>
+<div class="font-mono text-label-md text-label-md text-on-surface-variant">
+                03.119.827/0001-19
+              </div>
+<div class="text-[11px] text-on-surface-variant">Divergência EFD x DCTF</div>
+</td>
+<td class="py-3.5 px-4 min-w-[220px]">
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">edit_document</span>
+                Apresentação de DCTF Retificadora
+              </div>
+<div class="text-on-surface-variant text-[12px] line-clamp-1">
+                Intimação Fiscal nº 8219/2024 • Competência 06/2024
+              </div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface">16010.551982/2024-32</div>
+<div class="text-[11px] text-on-surface-variant font-mono">DRF Ribeirão Preto</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="font-medium text-on-surface">18/10/2024</div>
+<div class="text-[11px] text-outline font-mono">09:12:44</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold inline-block">
+                Ciência Auto em 3 dias
+              </div>
+<div class="text-[11px] text-on-surface-variant mt-0.5">15 dias corridos esgotam em 02/11</div>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Minuta de Resposta</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Ver Notificação Original" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Farmácias São João Distribuidora -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<input aria-label="Selecionar linha São João" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  8 dias restantes
+                </span>
+</div>
+<div class="text-[11px] font-mono text-tertiary font-medium mt-0.5">Vencimento: 01/11/2024</div>
+</td>
+<td class="py-3.5 px-4 min-w-[200px]">
+<div class="font-title-md text-title-md font-semibold text-on-surface group-hover:text-primary transition-colors">
+                Farmácias São João Distribuidora
+              </div>
+<div class="font-mono text-label-md text-label-md text-on-surface-variant">
+                08.231.902/0003-45
+              </div>
+<div class="text-[11px] text-error font-medium">Multa Isolada: R$ 34.180,00</div>
+</td>
+<td class="py-3.5 px-4 min-w-[220px]">
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">warning</span>
+                Lançamento de Multa Isolada
+              </div>
+<div class="text-on-surface-variant text-[12px] line-clamp-1">
+                Art. 18 Lei 10.833 • Suposta Falta de Recolhimento
+              </div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="font-mono font-medium text-on-surface">19512.339102/2024-88</div>
+<div class="text-[11px] text-on-surface-variant font-mono">Auto Infr: 2024/09912</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="font-medium text-on-surface">10/10/2024</div>
+<div class="text-[11px] text-outline font-mono">14:02:11</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold inline-block">
+                Em Elaboração Recurso
+              </div>
+<div class="text-[11px] text-on-surface-variant mt-0.5">Resp: Dra. Luciana Vértice</div>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">snippet_folder</span>
+<span>Ver Dossiê</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Visualizar Notificação" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Selection Summary Bar -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Exibindo <strong>1-4</strong> de <strong>18</strong> notificações ativas</span>
+<span class="text-outline">|</span>
+<span class="text-primary font-semibold" id="selected-counter">0 selecionadas</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container disabled:opacity-40 disabled:cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container disabled:opacity-40 disabled:cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-semibold text-label-sm">1</span>
+<button class="px-3 py-1 rounded-lg hover:bg-surface-container text-on-surface text-label-sm" type="button">2</button>
+<button class="px-3 py-1 rounded-lg hover:bg-surface-container text-on-surface text-label-sm" type="button">3</button>
+<button class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Interactive Section: Monthly Fiscal Calendar & Expert Legal Advisor Strip (Item 8) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Visual Fiscal Calendar Widget (Span 7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="space-y-0.5">
+<div class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+            Calendário de Vencimentos &amp; Defesas Fatais (Outubro/Novembro 2024)
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Prazos processuais administrativos não suspendem aos fins de semana se o término cair em dia útil bancário.
+          </p>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md font-bold text-on-surface px-2">Out 2024</span>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Compact Calendar Grid -->
+<div class="grid grid-cols-7 gap-1.5 text-center my-2 font-body-sm text-body-sm">
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Seg</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Ter</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Qua</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Qui</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Sex</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Sáb</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase">Dom</span>
+<!-- Calendar Days snippet -->
+<span class="p-2 text-outline/50 rounded-lg">21</span>
+<span class="p-2 text-outline/50 rounded-lg">22</span>
+<span class="p-2 text-outline/50 rounded-lg">23</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">24</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">25</span>
+<span class="p-2 text-outline rounded-lg">26</span>
+<span class="p-2 text-outline rounded-lg">27</span>
+<!-- Week with Critical Deadlines -->
+<div class="p-2 rounded-lg bg-error text-on-error font-bold relative group cursor-pointer shadow-sm">
+<span>28</span>
+<span class="block text-[9px] uppercase leading-tight font-sans">Fatal</span>
+<!-- Micro-tooltip on hover -->
+<div class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-1 w-44 p-2 bg-on-surface text-inverse-on-surface text-[11px] rounded-lg shadow-lg z-30">
+            Defesa Ramos Indústria (R$ 142k)
+          </div>
+</div>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">29</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">30</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">31</span>
+<!-- November Days -->
+<div class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-bold relative group cursor-pointer">
+<span>01</span>
+<span class="block text-[9px] uppercase leading-tight font-sans">Recurso</span>
+<div class="hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 mb-1 w-44 p-2 bg-on-surface text-inverse-on-surface text-[11px] rounded-lg shadow-lg z-30">
+            Recurso Farmácias São João
+          </div>
+</div>
+<span class="p-2 text-outline rounded-lg">02</span>
+<span class="p-2 text-outline rounded-lg">03</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">04</span>
+<div class="p-2 rounded-lg bg-primary-fixed text-on-primary-fixed font-bold relative group cursor-pointer">
+<span>05</span>
+<span class="block text-[9px] uppercase leading-tight font-sans">DCTF</span>
+</div>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">06</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">07</span>
+<span class="p-2 text-on-surface rounded-lg bg-surface-container-low font-medium">08</span>
+<span class="p-2 text-outline rounded-lg">09</span>
+<span class="p-2 text-outline rounded-lg">10</span>
+</div>
+<div class="flex items-center gap-4 text-[12px] text-on-surface-variant pt-2 border-t border-outline-variant">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-error"></span> Prazo Peremptório / Glosa</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-tertiary-fixed"></span> Defesa de Auto de Infração</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-primary-fixed"></span> Cumprimento de Intimação</span>
+</div>
+</div>
+<!-- Robotic Audit Log & Auditor Identity Card (Span 5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">terminal</span>
+            Log de Auditoria da Varredura RFB
+          </div>
+<span class="text-[11px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold">200 OK</span>
+</div>
+<div class="font-mono text-[11px] bg-surface-container-low p-3 rounded-xl space-y-1.5 text-on-surface-variant overflow-y-auto max-h-44">
+<div class="text-on-surface"><span class="text-outline">[14:38:02]</span> Iniciando handshake mTLS via ICP-Brasil A1 (Vértice Certs).</div>
+<div class="text-emerald-700"><span class="text-outline">[14:38:05]</span> Autenticado no e-CAC Portal de Serviços RFB com sucesso.</div>
+<div><span class="text-outline">[14:38:12]</span> Varridos 18 CNPJs ativos vinculados por procuração RFB.</div>
+<div class="text-tertiary-container"><span class="text-outline">[14:38:29]</span> 1 nova comunicação detectada: Indústria Metalúrgica Ramos.</div>
+<div><span class="text-outline">[14:38:31]</span> Hash SHA-256 do arquivo PDF gerado e armazenado em vault.</div>
+<div class="text-primary font-semibold"><span class="text-outline">[14:38:34]</span> Webhook disparado: Notificação Urgente WhatsApp &amp; E-mail enviada.</div>
+</div>
+</div>
+<div class="pt-3 border-t border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assinatura Digital ICP-Brasil A1 válida até <strong>11/2025</strong></span>
+</div>
+<button class="text-primary font-label-sm text-label-sm font-semibold hover:underline" type="button">Configurar Webhooks</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic micro-interactions for the page
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Sync button spin animation simulation
+    const syncBtn = document.getElementById('btn-sync');
+    const syncIcon = document.getElementById('sync-icon');
+    if (syncBtn && syncIcon) {
+      syncBtn.addEventListener('click', () => {
+        syncIcon.classList.add('animate-spin');
+        syncBtn.querySelector('span.font-semibold').textContent = 'Consultando e-CAC...';
+        setTimeout(() => {
+          syncIcon.classList.remove('animate-spin');
+          syncBtn.querySelector('span.font-semibold').textContent = 'Sincronizar e-CAC Agora';
+          alert('Varredura concluída com sucesso! Nenhuma nova intimação publicada nos últimos 12 minutos.');
+        }, 1600);
+      });
+    }
+
+    // 2. Select All Checkbox logic
+    const checkAll = document.getElementById('check-all');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+    const counterDisplay = document.getElementById('selected-counter');
+
+    function updateCounter() {
+      const selected = Array.from(rowCheckboxes).filter(cb => cb.checked).length;
+      if (counterDisplay) {
+        counterDisplay.textContent = `${selected} selecionada${selected !== 1 ? 's' : ''}`;
+      }
+    }
+
+    if (checkAll) {
+      checkAll.addEventListener('change', (e) => {
+        rowCheckboxes.forEach(cb => {
+          cb.checked = e.target.checked;
+        });
+        updateCounter();
+      });
+    }
+
+    rowCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const allChecked = Array.from(rowCheckboxes).every(c => c.checked);
+        if (checkAll) checkAll.checked = allChecked;
+        updateCounter();
+      });
+    });
+
+    // 3. Batch Action confirmation
+    const btnBatch = document.getElementById('btn-batch-ack');
+    if (btnBatch) {
+      btnBatch.addEventListener('click', () => {
+        const count = Array.from(rowCheckboxes).filter(cb => cb.checked).length;
+        if (count === 0) {
+          alert('Por favor, selecione ao menos uma notificação na tabela para registrar a ciência.');
+          return;
+        }
+        if (confirm(`Deseja registrar formalmente a Ciência Digital com certificado das ${count} notificações selecionadas? O prazo recursal começará a fluir.`)) {
+          alert(`Ciência confirmada com sucesso para ${count} registros.`);
+        }
+      });
+    }
+
+    // 4. Tab switcher active styles
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('border-primary', 'text-primary', 'font-bold');
+          b.classList.add('border-transparent', 'text-on-surface-variant', 'font-medium');
+        });
+        btn.classList.add('border-primary', 'text-primary', 'font-bold');
+        btn.classList.remove('border-transparent', 'text-on-surface-variant', 'font-medium');
+      });
+    });
+
+    // 5. Client side search filter
+    const searchInput = document.getElementById('table-search');
+    const tableRows = document.querySelectorAll('#table-body tr');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const term = e.target.value.toLowerCase().trim();
+        tableRows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(term) ? '' : 'none';
+        });
+      });
+    }
+  });
+</script></main></div></body></html>

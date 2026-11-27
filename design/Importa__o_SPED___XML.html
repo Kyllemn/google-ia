@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Financeiro &amp; Fiscal</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recuperacao-tributaria" href="#"><span>Recuperação Tributária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="importacao-sped-xml" href="#"><span>Importação SPED / XML</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laudo-tecnico-memoria" href="#"><span>Laudo Técnico &amp; Memória</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="conciliacao-bancaria" href="#"><span>Conciliação Bancária</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-e-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant border border-dashed border-outline-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span>+ Novo Módulo / Configurações</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Breadcrumb & Header Action Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Financeiro &amp; Fiscal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Validador Fiscal SPED</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Importação &amp; Validação SPED / EFD</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Auditoria eletrônica estruturada, cruzamento multidimensional de blocos fiscais e apuração algorítmica de inconsistências com diagnóstico de créditos presumidos.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="h-9 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Histórico de Lotes</span>
+</button>
+<button class="h-9 px-4 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all flex items-center gap-2" id="btn-toggle-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>+ Nova Importação em Lote</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Arquivos Auditados (Mês)</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">4.280 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">docs</span></span>
+<span class="font-label-md text-label-md text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +18.4% vs. mês ant.
+        </span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Taxa de Conformidade PVA</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">99.42%</span>
+<span class="font-label-md text-label-md text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> Regras SEFAZ 2024
+        </span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Créditos Mapeados</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">R$ 14,8 M</span>
+<span class="font-label-md text-label-md text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> PIS / COFINS monofásico
+        </span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Processador Assíncrono</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">8 Workers</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span> Ocioso / Disponível
+        </span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+</div>
+</div>
+<!-- CENTRAL AUDIT & IMPORT ENGINE (MODAL / HERO PANEL OPEN IN PLACE) -->
+<section class="relative bg-surface-container-lowest rounded-xl shadow-xl p-space-lg overflow-hidden flex flex-col gap-space-lg">
+<!-- Ambient subtle accent glow -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Panel Header with Status Badge -->
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md bg-surface-container-lowest">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Esteira de Processamento e Auditoria em Lote</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">Sessão Ativa #LOTE-2024-884A</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Arquivos transmitidos passam por validação sintática de schema, conferência de assinatura e cruzamento paramétrico Bloco C / Bloco M.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end lg:self-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Modo de Operação:</span>
+<span class="px-2.5 py-1 rounded-xl bg-surface-container font-label-md text-label-md text-primary font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Auditoria Preditiva 5 Anos
+        </span>
+</div>
+</div>
+<!-- Parameter Config Bar -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<!-- Empresa Selecionada -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium flex items-center justify-between">
+<span>Empresa Auditada / CNPJ</span>
+<span class="text-primary cursor-pointer hover:underline">Trocar</span>
+</label>
+<div class="h-[38px] px-3 bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-primary">domain</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Indústria Metalúrgica Ramos S/A</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 ml-2">14.892.411/0001-92</span>
+</div>
+</div>
+<!-- Período de Competência -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium flex items-center justify-between">
+<span>Janela Temporal de Prescrição</span>
+<span class="text-on-surface-variant font-normal">60 Competências</span>
+</label>
+<div class="h-[38px] px-3 bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">date_range</span>
+<span class="font-body-sm text-body-sm text-on-surface">Jan/2020 à Dez/2024</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Quinquenal</span>
+</div>
+</div>
+<!-- Tipo de Pacote / Arquivo -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">Layouts Selecionados p/ Conciliação</label>
+<div class="h-[38px] px-3 bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-1.5 overflow-hidden">
+<span class="px-1.5 py-0.5 bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm truncate">EFD ICMS/IPI</span>
+<span class="px-1.5 py-0.5 bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm truncate">EFD Contrib.</span>
+<span class="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded font-label-sm text-label-sm truncate">+ XMLs NF-e</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Drag & Drop Interactive Zone -->
+<div class="relative z-10 w-full p-8 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center justify-center text-center cursor-pointer group">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center text-primary group-hover:scale-105 transition-transform mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">upload_file</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">
+        Arraste arquivos SPED (.txt) ou Pacotes XML (.zip, .xml) para auditoria
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg mt-1">
+        Suporte nativo para EFD ICMS/IPI (Blocos 0, C, D, E, G, 1), EFD Contribuições (Blocos A, C, D, F, M, 1), ECD Contábil e repositórios de NF-e / CT-e estruturados.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-lg font-label-sm text-label-sm text-on-surface-variant shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span> SPED Fiscal (Layout 018)
+        </span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-lg font-label-sm text-label-sm text-on-surface-variant shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span> EFD Contribuições (Layout 006)
+        </span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-lg font-label-sm text-label-sm text-on-surface-variant shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span> NF-e Schema v4.00
+        </span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-lg font-label-sm text-label-sm text-on-surface-variant shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">lock</span> Hash SHA-256 Validado
+        </span>
+</div>
+<button class="mt-space-md h-9 px-5 bg-primary-container text-on-primary-container rounded-xl font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span>Explorar Arquivos no Computador</span>
+</button>
+</div>
+<!-- Active Pipeline / Progress Bar with Multi-stage Validation -->
+<div class="relative z-10 flex flex-col gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container animate-ping"></div>
+<span class="font-title-md text-title-md text-on-surface">Auditoria e Cruzamento em Andamento (91%)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Velocidade: 42.100 reg/s</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Etapa 4 de 5</span>
+</div>
+</div>
+<!-- Main Animated Progress Bar -->
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500 ease-out" style="width: 91%"></div>
+</div>
+<!-- 4-Stage Check Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm mt-space-xs">
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">1. Integridade PVA (Receita)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Schema v018 válido</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">2. Bloco C100 x C170</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">98.410 itens amarrados</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">3. Alíquotas PIS/COFINS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leis 10.637 e 10.833</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary-container animate-spin text-[20px]">sync</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">4. Prescrição Quinquenal</span>
+<span class="font-label-sm text-label-sm text-primary">Processando 2020...</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Resumo Imediato da Auditoria (Metrics Bento Grid) -->
+<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Registros Processados -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Registros Processados</span>
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">1.482.930</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Linhas SPED fiscal auditadas</div>
+</div>
+<!-- Erros Estruturais -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Erros Estruturais</span>
+<span class="material-symbols-outlined text-[18px]">gpp_good</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">0 <span class="font-title-md text-title-md text-primary font-medium">Bloqueios</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Arquivo apto para retificação</div>
+</div>
+<!-- Advertências / Divergências -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-tertiary mb-2">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-tertiary">Advertências Menores</span>
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="font-headline-md text-headline-md text-tertiary font-bold tracking-tight">14</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">CST inconsistente sem impacto de crédito</div>
+</div>
+<!-- Oportunidades de Crédito Identificadas -->
+<div class="bg-surface-container-highest p-space-md rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between text-primary mb-2">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Créditos Estimados</span>
+<span class="material-symbols-outlined text-[18px]">price_check</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight">R$ 842.600,00</div>
+<div class="font-label-sm text-label-sm text-on-surface mt-1 font-medium">326 lançamentos passíveis de tomada</div>
+</div>
+</div>
+<!-- Detailed Finding Insights / Inline Preview Tab -->
+<div class="relative z-10 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between border-b pb-space-sm bg-surface-container-lowest">
+<span class="font-title-md text-title-md text-on-surface">Principais Apurações do Lote Atual</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Classificação por tese tributária</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Insumos Industriais (Bloco C170)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">R$ 498.120,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            CFOPs 1.101 e 2.101 com alíquotas não aproveitadas na EFD Contribuições.
+          </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Energia Elétrica na Produção</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">R$ 214.380,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Bloco C500 x Laudo Técnico de demanda com rateio elétrico verificado.
+          </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Frete sobre Vendas e Transferências</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">R$ 130.100,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Bloco D100 (CT-e) com CFOPs 5.352 e 6.352 elegíveis à recuperação judicial.
+          </p>
+</div>
+</div>
+</div>
+<!-- Modal / Panel Footer Action Bar -->
+<div class="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest">
+<button class="w-full sm:w-auto h-9 px-4 rounded-xl text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Cancelar Validação</span>
+</button>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto h-9 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Baixar Relatório de Inconsistências (CSV)</span>
+</button>
+<button class="w-full sm:w-auto h-9 px-5 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Concluir Validação &amp; Enviar p/ Memória de Cálculo</span>
+</button>
+</div>
+</div>
+</section>
+<!-- RECENT BATCH LOGS / HISTORICAL AUDITS TABLE -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Lotes Processados Recentemente</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Histórico completo de arquivos fiscais auditados, logs de inconsistências e status de retificação.</p>
+</div>
+<!-- Quick Table Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="h-8 px-3 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">Todos (248)</button>
+<button class="h-8 px-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Auditados 100%</button>
+<button class="h-8 px-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Com Oportunidades</button>
+<button class="h-8 px-3 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Com Divergências</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Lote / Empresa</th>
+<th class="py-3 px-4">CNPJ Matriz</th>
+<th class="py-3 px-4">Competência</th>
+<th class="py-3 px-4">Tipo de Arquivo</th>
+<th class="py-3 px-4">Status da Auditoria</th>
+<th class="py-3 px-4">Crédito Identificado</th>
+<th class="py-3 px-4 text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Indústria Metalúrgica Ramos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lote #884A • 1.482.930 linhas</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-label-sm">14.892.411/0001-92</td>
+<td class="py-3 px-4">
+<span class="font-label-md text-label-md">01/2020 a 12/2024</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">EFD ICMS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">EFD Contrib.</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span> Em Processamento (91%)
+                </span>
+</td>
+<td class="py-3 px-4 font-semibold text-primary">R$ 842.600,00</td>
+<td class="py-3 px-4 text-right">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-medium inline-flex items-center gap-1">
+<span>Diagnóstico</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Agroindustrial Santa Fé</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lote #883F • 892.120 linhas</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-label-sm">08.219.043/0001-14</td>
+<td class="py-3 px-4">
+<span class="font-label-md text-label-md">01/2021 a 12/2023</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">EFD Contribuições</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">XML NFe (32.400)</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Auditado 100%
+                </span>
+</td>
+<td class="py-3 px-4 font-semibold text-primary">R$ 1.240.520,40</td>
+<td class="py-3 px-4 text-right">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-medium inline-flex items-center gap-1">
+<span>Diagnóstico</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">error_outline</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Logística &amp; Transportes Vale Verde</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lote #880C • 412.000 linhas</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-label-sm">22.405.118/0002-80</td>
+<td class="py-3 px-4">
+<span class="font-label-md text-label-md">01/2023 a 12/2023</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">CT-e D100</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">SPED ICMS/IPI</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 38 Divergências
+                </span>
+</td>
+<td class="py-3 px-4 font-semibold text-on-surface-variant">R$ 184.200,00</td>
+<td class="py-3 px-4 text-right">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-medium inline-flex items-center gap-1">
+<span>Diagnóstico</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Distribuidora Farmacêutica Sol Nascente</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lote #879A • 2.110.450 linhas</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-label-sm">33.918.420/0001-55</td>
+<td class="py-3 px-4">
+<span class="font-label-md text-label-md">01/2019 a 12/2023</span>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">SPED Contribuições</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">ECD Bloco J</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Auditado 100%
+                </span>
+</td>
+<td class="py-3 px-4 font-semibold text-primary">R$ 3.890.150,00</td>
+<td class="py-3 px-4 text-right">
+<button class="h-8 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-medium inline-flex items-center gap-1">
+<span>Diagnóstico</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exibindo 1 a 4 de 248 lotes auditados</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">3</button>
+<span class="px-2 text-on-surface-variant font-label-sm text-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">62</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for smooth visual indicator toggling
+  document.getElementById('btn-toggle-modal')?.addEventListener('click', () => {
+    window.scrollTo({ top: 120, behavior: 'smooth' });
+  });
+</script></main></div></body></html>

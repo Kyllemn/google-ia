@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Financeiro &amp; Fiscal</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recuperacao-tributaria" href="#"><span>Recuperação Tributária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="importacao-sped-xml" href="#"><span>Importação SPED / XML</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laudo-tecnico-memoria-de-calculo" href="#"><span>Laudo Técnico &amp; Memória de Cálculo</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="transmissao-perdcomp-web" href="#"><span>Transmissão PER/DCOMP Web</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="conciliacao-bancaria" href="#"><span>Conciliação Bancária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="intimacoes-prazos-e-cac" href="#"><span>Intimações &amp; Prazos e-CAC</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auditoria-dctfweb-efd" href="#"><span>Auditoria DCTFWeb x EFD</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contratos-honorarios-exito" href="#"><span>Contratos &amp; Honorários no Êxito</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Status Marker -->
+<div class="flex items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer uppercase tracking-wider">FINANCEIRO &amp; FISCAL</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer uppercase tracking-wider">GESTÃO CONTRATUAL</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary uppercase tracking-wider">CONTRATOS &amp; HONORÁRIOS NO ÊXITO</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm bg-surface-container-low px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Split Automático &amp; PER/DCOMP Sincronizados</span>
+</div>
+</div>
+<!-- Header Section with Title, Description and Core Action Buttons -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[28px]">gavel</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Contratos de Honorários &amp; Cobrança no Êxito</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+        Gestão de percentuais contratuais pactuados, faturamento vinculado a despachos homologatórios de PER/DCOMP e emissão de notas fiscais com split de honorários.
+      </p>
+</div>
+<!-- Actions Area -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-end">
+<button class="inline-flex items-center gap-2 h-9 px-4 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg shadow-sm transition-all" id="btnOpenSimulator" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">calculate</span>
+        Simulador de Honorários
+      </button>
+<button class="inline-flex items-center gap-2 h-9 px-4 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+        Exportar Relatório
+      </button>
+<button class="inline-flex items-center gap-2 h-9 px-4 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+        + Novo Contrato de Honorários
+      </button>
+</div>
+</div>
+<!-- Metric KPI Cards (4 Cards Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1: Honorários a Faturar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute right-0 top-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Homologados RFB</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface mb-1">Honorários a Faturar</div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight">R$ 248.016,00</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span class="truncate">Disponíveis pós despacho PER/DCOMP</span>
+<span class="font-semibold text-primary flex items-center gap-1 shrink-0">1 CTR apto</span>
+</div>
+</div>
+<!-- Card 2: Faturado / Recebido no Ano -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute right-0 top-0 w-24 h-24 bg-secondary/5 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Receita Realizada 2024</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface mb-1">Faturado / Recebido no Ano</div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">R$ 684.500,00</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span>Receita líquida consultoria</span>
+<span class="font-semibold text-secondary flex items-center gap-1">+14.2% a.a.</span>
+</div>
+</div>
+<!-- Card 3: Honorários Projetados em Tramitação -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute right-0 top-0 w-24 h-24 bg-secondary-container/10 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Em Análise Fiscal</span>
+<span class="p-1.5 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface mb-1">Honorários Projetados</div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">R$ 619.000,00</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span class="truncate">Base: R$ 3,1M em análise na RFB</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">5 processos</span>
+</div>
+</div>
+<!-- Card 4: Percentual Médio de Êxito -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute right-0 top-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Benchmark Comercial</span>
+<span class="p-1.5 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">percent</span>
+</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface mb-1">Percentual Médio de Êxito</div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">20,0%</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg py-2.5">
+<span>Faixa pactuada: 15% a 25%</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Quota Litis</span>
+</div>
+</div>
+</div>
+<!-- Bento Section: Regras Contratuais & Painel Split de Parceiros -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Regras Contratuais e Modelo de Cobrança (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Diretrizes &amp; Cláusulas de Êxito (Ad Exitum)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Padronização do nexo causal e gatilhos de faturamento tributário</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+            Vigência 2024
+          </span>
+</div>
+<!-- Cláusula Padrão Callout -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">verified</span>
+<div class="text-on-surface">
+<span class="font-label-lg text-label-lg font-semibold block mb-0.5">Cláusula Quota Litis Padrão:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Cobrança estritamente no êxito (<em>ad exitum</em>) mediante publicação do despacho decisório de homologação/deferimento emitido pela Receita Federal ou compensação efetiva averbada na DCTFWeb contra débitos correntes da empresa contratante.
+              </p>
+</div>
+</div>
+</div>
+<!-- Trigger Options Comparison -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Gatilho A -->
+<div class="p-space-md rounded-xl bg-surface-bright shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Gatilho A: DCTFWeb Mensal
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">Recorrente</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Pagamento fracionado e proporcional ao valor do crédito aproveitado a cada apuração mensal (competência), mitigando impacto no fluxo de caixa do cliente.
+            </p>
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sync_alt</span>
+              Conciliação via Darf e Extrato DCTFWeb
+            </div>
+</div>
+<!-- Gatilho B -->
+<div class="p-space-md rounded-xl bg-surface-bright shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-semibold text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Gatilho B: Homologação RFB
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-sm text-label-sm">À Vista / 30d</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Faturamento integral emitido imediatamente após expedição formal do Despacho Decisório Homologatório ou decurso de prazo decadencial com chancela administrativa.
+            </p>
+<div class="font-label-sm text-label-sm text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+              Garantia do Título Executivo Contratual
+            </div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+          Minutas auditadas em conformidade com o Provimento OAB nº 161/2014
+        </span>
+<a class="text-primary hover:underline font-semibold flex items-center gap-0.5" href="#">
+          Ver Minuta Modelo
+          <span class="material-symbols-outlined text-[14px]">pixel_4_4xl_4a_5_5a_5g</span>
+</a>
+</div>
+</div>
+<!-- Split de Parceiros & Integração Financeira (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-[20px]">call_split</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Split Automático de Honorários</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Repasse a pareceristas e peritos homologados</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Subconta Bancária</span>
+</div>
+<!-- Split Distribution Visualization -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Regra de Rateio Contratual</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% dos Recebíveis</span>
+</div>
+<!-- Progress Bar visual for Split -->
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex mb-3">
+<div class="bg-primary h-full transition-all" style="width: 85%" title="Consultoria Vértice (85%)"></div>
+<div class="bg-secondary-container h-full transition-all" style="width: 15%" title="Parecerista / Perito (15%)"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-1.5 text-primary mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<span class="font-label-md text-label-md font-semibold truncate">Vértice Fiscal (Lead)</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">85,0%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Operação e laudos técnicos</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container shrink-0"></span>
+<span class="font-label-md text-label-md font-semibold truncate">Perito / Parecerista</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">15,0%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Assinatura ART / OAB Externa</div>
+</div>
+</div>
+</div>
+<!-- NFSe & PIX Integration Badge -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-bright shadow-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
+<span class="font-label-md text-label-md">Emissão Automática NFSe Municipal</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              Ativo
+            </span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-bright shadow-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">qr_code_2</span>
+<span class="font-label-md text-label-md">Boleto Registrado &amp; Pix Dinâmico</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Conta Custódia
+            </span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Retenção de IRRF/CSLL e ISS calculados por NF</span>
+</div>
+</div>
+</div>
+<!-- Interactive Data Table: Gestão de Contratos de Clientes -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<!-- Filter and Table Toolbar -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Contratos de Honorários em Execução</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Relação analítica de teses, créditos apurados e situação das faturas vinculadas à compensação</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative">
+<select class="h-9 pl-3 pr-8 rounded-xl bg-surface text-on-surface font-label-md text-label-md focus:outline-none appearance-none cursor-pointer">
+<option>Todos os Status</option>
+<option>Apto para Faturamento</option>
+<option>Aguardando Homologação</option>
+<option>Nota Fiscal Emitida</option>
+<option>Totalmente Quitado</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] absolute right-2.5 top-2 pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-9 pl-3 pr-8 rounded-xl bg-surface text-on-surface font-label-md text-label-md focus:outline-none appearance-none cursor-pointer">
+<option>Todas as Teses Tributárias</option>
+<option>Tema 69 STF (Exclusão ICMS)</option>
+<option>Funrural / INSS Folha</option>
+<option>PIS/COFINS Monofásico</option>
+<option>Crédito Frete/Insumos</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] absolute right-2.5 top-2 pointer-events-none">expand_more</span>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+          Filtros Avançados
+        </button>
+</div>
+</div>
+<!-- The Dense Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md w-12 text-center">
+<input class="rounded w-4 h-4 text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-space-md">Contrato / Cliente</th>
+<th class="py-3 px-space-md">Objeto da Recuperação / Tese</th>
+<th class="py-3 px-space-md text-right">Crédito Tributário</th>
+<th class="py-3 px-space-md text-center">% Êxito</th>
+<th class="py-3 px-space-md text-right">Honorários Calculados</th>
+<th class="py-3 px-space-md">Status Faturamento</th>
+<th class="py-3 px-space-md">Vencimento / Próx.</th>
+<th class="py-3 px-space-md text-center">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md">
+<!-- Row 1: CTR-2023-048 - Ramos -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded w-4 h-4 text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-title-md text-title-md text-on-surface">Indústria Metalúrgica Ramos Ltda</div>
+<div class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span>
+                CTR-2023-048
+              </div>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">Exclusão ICMS PIS/COFINS</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Tema 69 STF • Modulação Plena</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 1.240.080,00</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Homologado RFB</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-md text-label-md font-bold">20,0%</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-headline-sm text-headline-sm font-semibold text-primary">R$ 248.016,00</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4x DCTFWeb (R$ 62.004,00)</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                Apto Faturamento (Parc. 1/4)
+              </span>
+</td>
+<td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface">
+<div class="font-medium text-on-surface">15/11/2024</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Imediato</div>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+                Emitir NFSe &amp; Boleto
+              </button>
+</td>
+</tr>
+<!-- Row 2: CTR-2023-019 - Vale do Sol -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded w-4 h-4 text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-title-md text-title-md text-on-surface">Agropecuária Vale do Sol Eireli</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span>
+                CTR-2023-019
+              </div>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">Funrural / INSS Folha</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Não Incidência Produtor Rural</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 437.050,00</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Compensação Efetivada</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold">22,0%</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 96.151,00</div>
+<div class="font-label-sm text-label-sm text-secondary font-medium">Integralmente Liquidado</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Totalmente Quitado (100%)
+              </span>
+</td>
+<td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>Liquidado</div>
+<div class="font-label-sm text-label-sm">Recibo #9042</div>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                Ver Recibo Quitação
+              </button>
+</td>
+</tr>
+<!-- Row 3: CTR-2024-002 - Farmácias São João -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded w-4 h-4 text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-title-md text-title-md text-on-surface">Farmácias São João Distribuidora</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span>
+                CTR-2024-002
+              </div>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">PIS/COFINS Monofásico</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Produtos Farmacêuticos / Cosméticos</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 420.000,00</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Em Auditoria RFB</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold">18,0%</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 75.600,00</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Estimado sob êxito</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                Aguardando Homologação
+              </span>
+</td>
+<td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div>Previsão Dez/24</div>
+<div class="font-label-sm text-label-sm">D-45 RFB</div>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                Acompanhar Processo
+              </button>
+</td>
+</tr>
+<!-- Row 4: CTR-2024-015 - Distribuidora Aliança -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded w-4 h-4 text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-title-md text-title-md text-on-surface">Distribuidora Aliança de Alimentos</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span>
+                CTR-2024-015
+              </div>
+</td>
+<td class="py-3 px-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">PIS/COFINS Frete &amp; Insumos</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Regime Não-Cumulativo Transporte</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-body-md text-body-md font-semibold text-on-surface">R$ 189.920,00</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Homologação Deferida</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-md text-label-md font-bold">20,0%</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">R$ 37.984,00</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">NFSe 2024-1102 Emitida</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                NF Emitida (Vence 05/11)
+              </span>
+</td>
+<td class="py-3 px-space-md font-body-sm text-body-sm">
+<div class="font-semibold text-on-surface">05/11/2024</div>
+<div class="font-label-sm text-label-sm text-secondary">Aguardando Baixa</div>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+                Ver NFSe / Boleto
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<div>
+        Exibindo <span class="font-semibold text-on-surface">4</span> de <span class="font-semibold text-on-surface">18</span> contratos ativos com cláusula quota litis
+      </div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface disabled:opacity-50" disabled="">Anterior</button>
+<span class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-bold">1</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface">2</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface">3</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface">Próximo</button>
+</div>
+</div>
+</div>
+<!-- Modal Interativo: Simulador de Honorários Quota Litis -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 hidden" id="simulatorModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-xl shadow-xl overflow-hidden transform transition-all">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Simulador de Honorários no Êxito</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Projeção imediata de faturamento e divisão de honorários</p>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" id="btnCloseSimulator">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg space-y-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Valor Estimado do Crédito Recuperável (R$)</label>
+<div class="relative">
+<span class="absolute left-3.5 top-2.5 font-label-md text-label-md text-outline font-semibold">R$</span>
+<input class="w-full h-[40px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant text-on-surface font-headline-sm text-headline-sm focus:outline-none focus:border-primary" id="inputCreditValue" step="1000" type="number" value="500000"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Ex: Crédito apurado em laudo pericial ou relatório PER/DCOMP</span>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">% de Êxito Acordado (Quota Litis)</label>
+<span class="font-label-md text-label-md font-bold text-primary" id="labelPercentage">20%</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" id="rangePercentage" max="30" min="10" step="1" type="range" value="20"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mt-1">
+<span>10% (Piso corporativo)</span>
+<span>20% (Padrão)</span>
+<span>30% (Teto contratual)</span>
+</div>
+</div>
+<!-- Calculated Summary Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Honorários Brutos Totais:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="outputTotalHonorarios">R$ 100.000,00</span>
+</div>
+<div class="h-px bg-outline-variant/60 my-1"></div>
+<!-- Split Breakdown in Modal -->
+<div class="grid grid-cols-2 gap-2 text-on-surface font-label-sm text-label-sm">
+<div class="p-2 rounded-lg bg-surface-container-lowest">
+<span class="text-on-surface-variant block">Vértice Fiscal (85%):</span>
+<span class="font-title-md text-title-md text-primary font-semibold" id="outputVerticeShare">R$ 85.000,00</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest">
+<span class="text-on-surface-variant block">Parecerista/Perito (15%):</span>
+<span class="font-title-md text-title-md text-secondary font-semibold" id="outputPartnerShare">R$ 15.000,00</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold">Modalidade de Faturamento</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-2.5 rounded-xl bg-primary-fixed text-primary font-label-md text-label-md font-semibold text-center hover:bg-primary-fixed-dim transition-colors" type="button">
+              Parcelado DCTFWeb (Mensal)
+            </button>
+<button class="p-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium text-center hover:bg-surface-container-high transition-colors" type="button">
+              À Vista na Homologação
+            </button>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" id="btnCancelSimulator" type="button">
+          Fechar
+        </button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-semibold shadow-md transition-all" type="button">
+          Gerar Minuta com Estes Valores
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initHonorariosSimulator() {
+    const btnOpen = document.getElementById('btnOpenSimulator');
+    const btnClose = document.getElementById('btnCloseSimulator');
+    const btnCancel = document.getElementById('btnCancelSimulator');
+    const modal = document.getElementById('simulatorModal');
+
+    const inputCredit = document.getElementById('inputCreditValue');
+    const rangePerc = document.getElementById('rangePercentage');
+    const labelPerc = document.getElementById('labelPercentage');
+    const outTotal = document.getElementById('outputTotalHonorarios');
+    const outVertice = document.getElementById('outputVerticeShare');
+    const outPartner = document.getElementById('outputPartnerShare');
+
+    function formatBRL(val) {
+      return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    function recalculate() {
+      if (!inputCredit || !rangePerc) return;
+      const credit = parseFloat(inputCredit.value) || 0;
+      const pct = parseFloat(rangePerc.value) || 20;
+
+      if (labelPerc) labelPerc.textContent = pct + '%';
+
+      const totalFees = credit * (pct / 100);
+      const verticeFees = totalFees * 0.85;
+      const partnerFees = totalFees * 0.15;
+
+      if (outTotal) outTotal.textContent = formatBRL(totalFees);
+      if (outVertice) outVertice.textContent = formatBRL(verticeFees);
+      if (outPartner) outPartner.textContent = formatBRL(partnerFees);
+    }
+
+    if (btnOpen && modal) {
+      btnOpen.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        recalculate();
+      });
+    }
+
+    const closeModal = () => {
+      if (modal) modal.classList.add('hidden');
+    };
+
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+    if (btnCancel) btnCancel.addEventListener('click', closeModal);
+
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    if (inputCredit) inputCredit.addEventListener('input', recalculate);
+    if (rangePerc) rangePerc.addEventListener('input', recalculate);
+  })();
+</script></main></div></body></html>

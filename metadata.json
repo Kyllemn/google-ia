@@ -1,0 +1,6 @@
+{
+  "name": "Vértice CRM",
+  "description": "Plataforma integrada de gestão comercial, carteiras B2B, recuperação tributária, auditoria SPED/XML, laudos técnicos e conciliação bancária.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

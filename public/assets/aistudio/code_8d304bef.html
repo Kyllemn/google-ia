@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Financeiro &amp; Fiscal</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recuperacao-tributaria" href="#"><span>Recuperação Tributária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="importacao-sped-xml" href="#"><span>Importação SPED / XML</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laudo-tecnico-memoria-de-calculo" href="#"><span>Laudo Técnico &amp; Memória de Cálculo</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="transmissao-perdcomp-web" href="#"><span>Transmissão PER/DCOMP Web</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="conciliacao-bancaria" href="#"><span>Conciliação Bancária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="intimacoes-prazos-e-cac" href="#"><span>Intimações &amp; Prazos e-CAC</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recursos-carf" href="#"><span>Recursos &amp; CARF</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auditoria-dctfweb-efd" href="#"><span>Auditoria DCTFWeb x EFD</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contratos-honorarios-exito" href="#"><span>Contratos &amp; Honorários no Êxito</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full max-w-[1600px] mx-auto pb-space-xl">
+<!-- Top Breadcrumb & Live Sync Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span>Financeiro &amp; Fiscal</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span>Contencioso Administrativo</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Recursos &amp; CARF</span>
+</nav>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Contencioso Administrativo &amp; Recursos CARF / DRJ</h2>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">e-CAC / CARF Sincronizado</span>
+<span class="font-label-sm text-label-sm text-outline">Hoje, 09:42</span>
+</div>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2 shadow-sm font-label-md text-label-md" id="btnExport" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Exportar Acórdãos</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2 shadow-sm font-label-md text-label-md" id="btnSync" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Sincronizar Pautas CARF</span>
+</button>
+<button class="h-9 px-4 rounded-lg bg-primary text-on-primary hover:bg-on-primary-fixed-variant transition-all flex items-center gap-2 shadow-md font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Novo Recurso Voluntário</span>
+</button>
+</div>
+</div>
+<!-- Critical Hearing Alert Banner (Pauta Eminente CARF) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-on-background via-inverse-surface to-on-background text-inverse-on-surface p-space-lg shadow-xl">
+<div class="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-10 w-48 h-48 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-space-lg">
+<!-- Live Hearing Badge -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest/10 backdrop-blur-md min-w-[110px] text-center">
+<span class="font-label-sm text-label-sm text-error uppercase font-bold tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+              Pauta Próxima
+            </span>
+<span class="font-headline-md text-headline-md text-inverse-on-surface mt-1 font-bold">18h 24m</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Amanhã, 14:00</span>
+</div>
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">1ª Turma Ordinária / 1ª Seção CARF</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Processo nº 10830.720194/2024-11</span>
+</div>
+<h3 class="font-title-md text-title-md text-inverse-on-surface font-semibold tracking-tight">
+              Indústria Metalúrgica Ramos Ltda • Glosa de IRPJ/CSLL - Amortização de Ágio
+            </h3>
+<div class="flex items-center gap-space-md text-label-md text-outline-variant flex-wrap pt-0.5">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">person</span>
+                Relator: Conselheiro Marcus Aurelio F.
+              </span>
+<span class="flex items-center gap-1.5 text-secondary-fixed font-medium">
+<span class="material-symbols-outlined text-[16px]">record_voice_over</span>
+                Sustentação Oral Deferida (Dr. V. Albuquerque)
+              </span>
+<span class="flex items-center gap-1.5 text-inverse-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">paid</span>
+                Valor: R$ 3.840.000,00
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<a class="h-9 px-3.5 rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-inverse-on-surface transition-colors flex items-center gap-2 font-label-md text-label-md backdrop-blur-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Ver Memorial Técnico</span>
+</a>
+<a class="h-9 px-3.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors flex items-center gap-2 font-label-md text-label-md font-semibold shadow-md" href="#">
+<span class="material-symbols-outlined text-[18px]">live_tv</span>
+<span>Canal CARF no YouTube</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4 Key Contencioso Metrics Cards with Micro-Visualizations -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Volume Total -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Volume Total Contencioso</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">R$ 8,94 M</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">12 processos ativos em trâmite</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">CARF: 60.6%</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DRJ: 39.4%</span>
+</div>
+<div class="h-2 w-20 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary-container" style="width: 61%"></div>
+<div class="h-full bg-secondary" style="width: 39%"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: CARF 2ª Instância / CSRF -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Recursos no CARF / CSRF</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">R$ 5,42 M</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">5 Recursos (2ª Instância e Câmara Superior)</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 2 em Pauta Iminente
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Ticket Médio: R$ 1,08M</span>
+</div>
+</div>
+<!-- Card 3: Impugnações DRJ (1ª Instância) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Impugnações na DRJ</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">R$ 3,52 M</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">7 impugnações de autos e despachos</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">rule_folder</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Campinas, SP, BH e RJ</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">3 em Perícia</span>
+</div>
+</div>
+<!-- Card 4: Taxa de Êxito Pacificado -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Taxa de Êxito / Provimento</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">74,2%</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +3,8% a.a.
+              </span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">Fundamentado em Súmulas e Temas Repetitivos</span>
+</div>
+<!-- Mini Radial Donut Gauge SVG -->
+<div class="w-12 h-12 relative flex items-center justify-center">
+<svg class="w-12 h-12 -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="88" stroke-dashoffset="22.7" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<span class="absolute font-label-sm text-[10px] font-bold text-on-surface">74%</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>8 acórdãos favoráveis nos ult. 18m</span>
+<span class="text-primary font-medium hover:underline cursor-pointer">Ver Memória</span>
+</div>
+</div>
+</div>
+<!-- Main Content Grid: Process Table & Lateral Intelligence Hub -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Primary Left Column: Process Search, Filter Tabs & Analytics Table (8/12 Desktop) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Filter Tabs Component -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1 overflow-x-auto pb-1 sm:pb-0" id="tabsGroup">
+<button class="tab-btn px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm" data-tab="all">
+              Todos os Processos (12)
+            </button>
+<button class="tab-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" data-tab="pautados">
+              Pautados CARF (2)
+            </button>
+<button class="tab-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" data-tab="distribuicao">
+              Aguardando Relatoria (4)
+            </button>
+<button class="tab-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" data-tab="acordao">
+              Acórdãos (3)
+            </button>
+<button class="tab-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors" data-tab="csrf">
+              CSRF Especial (3)
+            </button>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-sm text-label-sm text-outline">Ordenar por:</span>
+<select class="h-8 px-2 rounded-lg bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface focus:outline-none focus:border-primary">
+<option>Maior Valor (R$)</option>
+<option>Pauta / Sessão mais próxima</option>
+<option>Data de Distribuição</option>
+<option>Prazo Fatal</option>
+</select>
+</div>
+</div>
+<!-- Secondary Detailed Filter Ribbon -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-wrap items-center gap-space-sm">
+<div class="relative flex-1 min-w-[200px]">
+<span class="material-symbols-outlined text-outline text-[18px] absolute left-3 top-2.5">filter_alt</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface border border-outline-variant font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Filtrar por Contribuinte, nº do processo ou tese..." type="text"/>
+</div>
+<select class="h-9 px-3 rounded-lg bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface focus:outline-none focus:border-primary">
+<option value="">Todas as Instâncias / Turmas</option>
+<option value="1sec">1ª Seção CARF (IRPJ/CSLL)</option>
+<option value="2sec">2ª Seção CARF (Previdenciário/IRPF)</option>
+<option value="3sec">3ª Seção CARF (PIS/COFINS/IPI)</option>
+<option value="csrf">CSRF (Câmara Superior)</option>
+<option value="drj">DRJ (1ª Instância)</option>
+</select>
+<select class="h-9 px-3 rounded-lg bg-surface border border-outline-variant font-label-sm text-label-sm text-on-surface focus:outline-none focus:border-primary">
+<option value="">Tese Principal</option>
+<option value="pis">Exclusão ICMS Base PIS/COFINS</option>
+<option value="agio">Amortização de Ágio Interno</option>
+<option value="jcp">JCP Retroativo Extemporâneo</option>
+<option value="cred_ins">Créditos PIS/COFINS Bens Insumos</option>
+<option value="subsidio">Subvenções p/ Investimento (art. 30)</option>
+</select>
+<button class="h-9 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors font-label-md text-label-md flex items-center gap-1.5" title="Limpar Filtros">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Limpar</span>
+</button>
+</div>
+<!-- Table Card Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Processo Adm. / Contribuinte</th>
+<th class="py-3 px-4 font-semibold">Colegiado / Instância</th>
+<th class="py-3 px-4 font-semibold">Tese Objeto da Glosa</th>
+<th class="py-3 px-4 font-semibold text-right">Valor em Litígio</th>
+<th class="py-3 px-4 font-semibold">Situação / Pauta</th>
+<th class="py-3 px-4 font-semibold text-center">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Pautado Iminente -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary font-label-md text-label-md">10830.720194/2024-11</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-bold">PAUTA</span>
+</div>
+<span class="font-medium text-on-surface text-[13px] mt-0.5">Indústria Metalúrgica Ramos Ltda</span>
+<span class="text-outline text-label-sm">CNPJ: 45.291.802/0001-44</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">1ª Turma / 1ª Seção</span>
+<span class="text-on-surface-variant text-label-sm">CARF Brasília (DF)</span>
+<span class="text-outline text-label-sm">Rel: Marcus Aurelio F.</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col max-w-[220px]">
+<span class="font-medium text-on-surface truncate" title="Amortização de Ágio em Aquisições">Amortização Ágio Empresa Veículo</span>
+<span class="text-outline text-label-sm truncate">IRPJ / CSLL 2019 a 2021</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface font-label-lg text-label-lg">R$ 3.840.000,00</span>
+<span class="text-secondary font-label-sm text-label-sm font-medium">Êxito Previsto: 68%</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-medium text-error font-label-sm text-label-sm">Sessão: Amanhã 14h</span>
+</div>
+<span class="text-outline text-label-sm">Sustentação Requerida</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Ver Dossiê e Peças">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Memorial de Julgamento">
+<span class="material-symbols-outlined text-[18px]">article</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Link YouTube / Pauta Oficial">
+<span class="material-symbols-outlined text-[18px]">video_camera_front</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: CSRF PIS/COFINS -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary font-label-md text-label-md">19515.720042/2023-89</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold">CSRF</span>
+</div>
+<span class="font-medium text-on-surface text-[13px] mt-0.5">Distribuidora Vanguarda de Alimentos</span>
+<span class="text-outline text-label-sm">CNPJ: 18.334.901/0002-18</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">3ª Turma / CSRF</span>
+<span class="text-on-surface-variant text-label-sm">Câmara Superior de Recursos</span>
+<span class="text-outline text-label-sm">Relª: Dra. Beatriz Costa</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col max-w-[220px]">
+<span class="font-medium text-on-surface truncate" title="Crédito de Frete e Armazenagem">Crédito Insumos: Frete Intermunicipal</span>
+<span class="text-outline text-label-sm truncate">PIS/COFINS Não Cumulativo</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface font-label-lg text-label-lg">R$ 1.580.000,00</span>
+<span class="text-primary font-label-sm text-label-sm font-semibold">Súmula CARF 164</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-medium text-on-surface font-label-sm text-label-sm">Pauta 28/Nov</span>
+</div>
+<span class="text-outline text-label-sm">Recurso Especial da Fazenda</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Ver Dossiê e Peças">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Memorial de Julgamento">
+<span class="material-symbols-outlined text-[18px]">article</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Contrarrazões Interpostas">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: DRJ Campinas - Impugnação -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary font-label-md text-label-md">10140.901452/2024-55</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px] font-bold">DRJ-1ª INST</span>
+</div>
+<span class="font-medium text-on-surface text-[13px] mt-0.5">Soluções Químicas Paulista S.A.</span>
+<span class="text-outline text-label-sm">CNPJ: 03.119.554/0001-90</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">5ª Turma Julgamento</span>
+<span class="text-on-surface-variant text-label-sm">DRJ Campinas (SP)</span>
+<span class="text-outline text-label-sm">Aguardando Distribuição</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col max-w-[220px]">
+<span class="font-medium text-on-surface truncate" title="Subvenção para Investimento art. 30">Exclusão Subvenções ICMS (LC 160)</span>
+<span class="text-outline text-label-sm truncate">IRPJ e CSLL Lucro Real</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface font-label-lg text-label-lg">R$ 1.150.200,00</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Risco Moderado</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-medium text-on-surface font-label-sm text-label-sm">Impugnação Protocolada</span>
+</div>
+<span class="text-outline text-label-sm">Prazo DRJ: 120 dias</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Ver Dossiê e Peças">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Petição Inicial DRJ">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Acórdão Favorável Parcial -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary font-label-md text-label-md">13808.720883/2023-30</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[10px] font-bold">ACÓRDÃO PUBLICADO</span>
+</div>
+<span class="font-medium text-on-surface text-[13px] mt-0.5">Logística &amp; Navegação Continental</span>
+<span class="text-outline text-label-sm">CNPJ: 07.981.332/0001-09</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">2ª Câmara / 3ª Seção</span>
+<span class="text-on-surface-variant text-label-sm">CARF Brasília</span>
+<span class="text-outline text-label-sm">Acórdão nº 3201-011.450</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col max-w-[220px]">
+<span class="font-medium text-on-surface truncate" title="Exclusão de ICMS destacado">Tema 69 STF: Exclusão ICMS PIS/COFINS</span>
+<span class="text-outline text-label-sm truncate">Repetição de Indébito PER/DCOMP</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-primary font-label-lg text-label-lg">R$ 890.000,00</span>
+<span class="text-primary font-label-sm text-label-sm font-semibold">Provido 100% (Unânime)</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-medium text-primary font-label-sm text-label-sm">Trânsito em Julgado Próx.</span>
+</div>
+<span class="text-outline text-label-sm">Sem Recurso Fazendário</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Baixar Acórdão Oficial">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Gerar Compensação PER/DCOMP">
+<span class="material-symbols-outlined text-[18px]">currency_exchange</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: JCP Retroativo Extemporâneo -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary font-label-md text-label-md">16561.720239/2024-02</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px] font-bold">DRJ-BH</span>
+</div>
+<span class="font-medium text-on-surface text-[13px] mt-0.5">Mineração Vale Dourado Participações</span>
+<span class="text-outline text-label-sm">CNPJ: 22.840.119/0001-52</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">3ª Turma Julgamento</span>
+<span class="text-on-surface-variant text-label-sm">DRJ Belo Horizonte (MG)</span>
+<span class="text-outline text-label-sm">Rel: Dr. Henrique Toledo</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col max-w-[220px]">
+<span class="font-medium text-on-surface truncate" title="Dedutibilidade JCP em Exercício Distinto">Juros sobre Capital Próprio (JCP) Extemporâneo</span>
+<span class="text-outline text-label-sm truncate">IRPJ / CSLL Exercício 2022</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface font-label-lg text-label-lg">R$ 1.480.000,00</span>
+<span class="text-secondary font-label-sm text-label-sm">Jurisprudência STJ Favorável</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-medium text-on-surface font-label-sm text-label-sm">Diligência Pericial</span>
+</div>
+<span class="text-outline text-label-sm">Prazo Réplica: 14 dias</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Ver Dossiê e Peças">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" title="Manifestação Diligência">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Footer -->
+<div class="p-space-md bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-label-sm font-label-sm text-on-surface-variant">
+<span>Exibindo <strong>5</strong> de <strong>12</strong> processos contenciosos ativos</span>
+<div class="flex items-center gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40" disabled="">Anterior</button>
+<button class="h-8 w-8 rounded-lg bg-primary-container text-on-primary font-semibold">1</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-colors">2</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-colors">3</button>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors">Próximo</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Right Column: Sustentação Oral Status & Jurisprudência CARF Radar (4/12 Desktop) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Sustentação Oral Management Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">podium</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Sustentações Orais Requeridas</h4>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">3 Registradas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Acompanhamento de deferimento perante as Secretarias das Câmaras do CARF em Brasília e envio de arquivos audiovisuais.
+          </p>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Metalúrgica Ramos</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Deferida
+                </span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>1ª Seção • Presencial</span>
+<span class="font-medium text-error">Amanhã, 14:00</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline text-[11px]">Advogado: Dr. Victor Albuquerque (OAB/DF 41.209)</span>
+<span class="text-primary hover:underline cursor-pointer text-[12px] font-medium">Testar Link</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Distribuidora Vanguarda</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span> Em Análise
+                </span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>CSRF • Telepresencial (Teams)</span>
+<span class="font-medium text-on-surface">Pauta 28/Nov</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline text-[11px]">Advogada: Dra. Camila Rocha (OAB/SP 289.112)</span>
+<span class="text-outline text-[12px]">Petição #44192</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Agroindústria Cerrado Sul</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+                  Minuta Pronta
+                </span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>2ª Turma Ordinária / 2ª Seção</span>
+<span>Previsão Dez/2024</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-outline text-[11px]">Submissão até 48h antes da pauta oficial</span>
+<button class="text-primary hover:underline text-[12px] font-semibold">Protocolar</button>
+</div>
+</div>
+</div>
+<button class="w-full h-8 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Solicitar Nova Sustentação Oral no CARF</span>
+</button>
+</div>
+<!-- Radar de Jurisprudência & Súmulas Recentes CARF -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">balance</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Radar Jurisprudencial CARF</h4>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface" title="Atualizado via Diário Oficial da União">info</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Juris 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">SÚMULA CARF Nº 189</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% Aderente</span>
+</div>
+<h5 class="font-label-md text-label-md font-semibold text-on-surface mt-1">
+                Amortização de Ágio - Relação de Dependência
+              </h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                É legítima a amortização fiscal de ágio decorrente de operação de incorporação de sociedade quando comprovada a real existência econômica da entidade adquirente...
+              </p>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>Impacta: Processo 10830.720194</span>
+<span class="text-primary font-medium flex items-center gap-1">Ementa <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Juris 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">ACÓRDÃO PARADIGMA CSRF</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">CSRF 9303-014.221</span>
+</div>
+<h5 class="font-label-md text-label-md font-semibold text-on-surface mt-1">
+                PIS/COFINS - Despesas Portuárias como Insumo
+              </h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Reconhecimento do direito ao crédito das despesas obrigatórias com capatazia e armazenagem alfandegária na condição de insumos essenciais à exportação...
+              </p>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>Impacta: 2 processos na carteira</span>
+<span class="text-primary font-medium flex items-center gap-1">Ementa <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Juris 3 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">TEMA REPETITIVO STJ 1.182</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Votos Empatados / Art. 24-A</span>
+</div>
+<h5 class="font-label-md text-label-md font-semibold text-on-surface mt-1">
+                Subvenções de ICMS para Custeio
+              </h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Aplicação prática do novo critério de desempate no CARF e cancelamento de multas de ofício nos processos com votação desempatada pró-contribuinte...
+              </p>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>Impacta: 3 processos DRJ/CARF</span>
+<span class="text-primary font-medium flex items-center gap-1">Ementa <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Upload & Pauta Parser Box -->
+<div class="rounded-xl bg-gradient-to-br from-surface-container-lowest to-surface-container-low p-space-md shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Importar Pauta do DOU em PDF / XML</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cruze automaticamente os CNPJs dos clientes com as publicações do CARF</span>
+</div>
+<button class="h-8 px-3 rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface text-label-sm font-label-sm font-semibold transition-colors flex-shrink-0">
+            Analisar
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Tab filtering micro-interaction
+    const tabButtons = document.querySelectorAll('#tabsGroup .tab-btn');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.className = 'tab-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors';
+        });
+        btn.className = 'tab-btn px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm';
+      });
+    });
+
+    // Pautas CARF sync button micro-feedback
+    const btnSync = document.getElementById('btnSync');
+    if (btnSync) {
+      btnSync.addEventListener('click', () => {
+        const icon = btnSync.querySelector('.material-symbols-outlined');
+        const textSpan = btnSync.querySelector('span:not(.material-symbols-outlined)');
+        icon.classList.add('animate-spin');
+        textSpan.textContent = 'Verificando Pautas CARF...';
+        setTimeout(() => {
+          icon.classList.remove('animate-spin');
+          textSpan.textContent = 'Pautas Atualizadas!';
+          setTimeout(() => {
+            textSpan.textContent = 'Sincronizar Pautas CARF';
+          }, 2500);
+        }, 1200);
+      });
+    }
+
+    // Export notification trigger
+    const btnExport = document.getElementById('btnExport');
+    if (btnExport) {
+      btnExport.addEventListener('click', () => {
+        const originalText = btnExport.innerHTML;
+        btnExport.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">done</span><span>Acórdãos Prontos (ZIP)</span>';
+        setTimeout(() => {
+          btnExport.innerHTML = originalText;
+        }, 2500);
+      });
+    }
+  </script>
+</div></main></div></body></html>

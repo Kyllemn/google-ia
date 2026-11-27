@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">inbox</span><span>Receber Contatos</span></span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">12</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="gerenciamento-de-leads" href="#"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span>Gerenciamento de Leads</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span class="material-symbols-outlined text-[20px]">travel_explore</span><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span>Carteiras Ativas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span class="material-symbols-outlined text-[20px]">folder_off</span><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span class="material-symbols-outlined text-[20px]">group_add</span><span>Cadastro de Usuários</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant border border-dashed border-outline-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">add_circle_outline</span><span>+ Novo Módulo / Configurações</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header & Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary bg-primary-fixed px-2.5 py-0.5 rounded-full">Funil Comercial</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Atualizado há 2 min</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Gerenciamento de Leads</h1>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- View Switcher (Kanban / Lista) -->
+<div aria-label="Alternar visualização" class="inline-flex items-center p-1 rounded-xl bg-surface-container-low shadow-sm" role="group">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm transition-all" id="btn-view-kanban" onclick="switchView('kanban')" type="button">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>Kanban</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all" id="btn-view-lista" onclick="switchView('lista')" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+<span>Lista</span>
+</button>
+</div>
+<!-- Primary CTA -->
+<button class="inline-flex items-center gap-2 h-9 px-4 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg shadow-sm transition-colors" onclick="openNewLeadModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Novo Lead</span>
+</button>
+</div>
+</div>
+<!-- Filter Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant mr-2">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span>
+<span class="font-label-md text-label-md uppercase">Filtros</span>
+</div>
+<!-- Responsável -->
+<div class="relative">
+<select class="appearance-none h-[36px] pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="filter-owner" onchange="applyFilters()">
+<option value="all">Responsável: Todos</option>
+<option value="CM">Camila Mendes</option>
+<option value="RS">Rafael Souza</option>
+<option value="AL">André Lima</option>
+<option value="JP">Juliana Pires</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+<!-- Origem -->
+<div class="relative">
+<select class="appearance-none h-[36px] pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="filter-source" onchange="applyFilters()">
+<option value="all">Origem: Todas</option>
+<option value="RD">RD Station (RD)</option>
+<option value="IN">Inbound / Site (IN)</option>
+<option value="OB">Outbound (OB)</option>
+<option value="IND">Indicação (IND)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+<!-- Período -->
+<div class="relative">
+<select class="appearance-none h-[36px] pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="filter-period" onchange="applyFilters()">
+<option value="30d">Período: Últimos 30 dias</option>
+<option value="7d">Últimos 7 dias</option>
+<option value="90d">Último trimestre</option>
+<option value="all">Todo o período</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md transition-colors" onclick="resetFilters()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Limpar filtros</span>
+</button>
+</div>
+<!-- 4 Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Total de Leads -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Total de Leads</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">148</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +12,4% este mês
+        </span>
+<svg class="w-20 h-7 text-primary" fill="none" viewbox="0 0 80 28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 24L16 18L28 21L44 10L58 14L78 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Em Negociação -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Em Negociação</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">42</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+          28,3% do funil
+        </span>
+<svg class="w-20 h-7 text-secondary" fill="none" viewbox="0 0 80 28" xmlns="http://www.w3.org/2000/svg">
+<rect fill="currentColor" fill-opacity="0.3" height="12" rx="2" width="10" x="4" y="14"></rect>
+<rect fill="currentColor" fill-opacity="0.5" height="16" rx="2" width="10" x="20" y="10"></rect>
+<rect fill="currentColor" fill-opacity="0.7" height="20" rx="2" width="10" x="36" y="6"></rect>
+<rect fill="currentColor" fill-opacity="0.85" height="14" rx="2" width="10" x="52" y="12"></rect>
+<rect fill="currentColor" height="23" rx="2" width="10" x="68" y="3"></rect>
+</svg>
+</div>
+</div>
+<!-- Card 3: Taxa de Conversão -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Taxa de Conversão</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">24,5%</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">csv</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+          +2,1 pp vs meta
+        </span>
+<div class="w-24 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 24.5%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Valor em Pipeline -->
+<div class="p-space-lg rounded-xl bg-primary text-on-primary shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-primary/80 uppercase">Valor em Pipeline</span>
+<span class="font-headline-lg text-headline-lg text-on-primary">R$ 482.900</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-on-primary/15 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-on-primary/15 text-on-primary font-label-sm text-label-sm">
+          Ticket médio: R$ 11.497
+        </span>
+<span class="material-symbols-outlined text-[18px] text-on-primary/80">verified</span>
+</div>
+</div>
+</div>
+<!-- KANBAN BOARD VIEW -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md items-start" id="kanban-view">
+<!-- Column 1: Novo Lead -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between px-1 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-title-md text-title-md text-on-surface">Novo Lead</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm">3</span>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md px-1 pb-2">Subtotal: R$ 94.500</div>
+<div class="flex flex-col gap-space-sm" data-column="novo">
+<!-- Lead Card 1 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="CM" data-source="RD">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">RD-8492</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Grupo Horizonte Logística</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Mariana Vasconcelos</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 42.000</span>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Camila Mendes">CM</div>
+</div>
+</div>
+<!-- Lead Card 2 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="RS" data-source="IN">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">IN-3104</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Vanguarda Tech Ltda</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Eduardo Nogueira</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 28.500</span>
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Rafael Souza">RS</div>
+</div>
+</div>
+<!-- Lead Card 3 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="AL" data-source="OB">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">OB-5519</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Clínica São Lucas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Dra. Helena Prado</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 24.000</span>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-label-sm" title="André Lima">AL</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Contato Iniciado -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between px-1 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-title-md text-title-md text-on-surface">Contato Iniciado</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm">3</span>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md px-1 pb-2">Subtotal: R$ 118.400</div>
+<div class="flex flex-col gap-space-sm" data-column="contato">
+<!-- Lead Card 4 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="JP" data-source="RD">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">RD-8410</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Atacado Brasil Sul</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Roberto Ferreira</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 54.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm" title="Juliana Pires">JP</div>
+</div>
+</div>
+<!-- Lead Card 5 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="CM" data-source="IND">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">IND-1022</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Construtora Alvorada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Eng. Lucas Ribeiro</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 36.400</span>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Camila Mendes">CM</div>
+</div>
+</div>
+<!-- Lead Card 6 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="RS" data-source="IN">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">IN-3098</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Nexus Educação</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Patrícia Campos</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 28.000</span>
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Rafael Souza">RS</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Proposta Enviada -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between px-1 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h2 class="font-title-md text-title-md text-on-surface">Proposta Enviada</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm">2</span>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md px-1 pb-2">Subtotal: R$ 138.000</div>
+<div class="flex flex-col gap-space-sm" data-column="proposta">
+<!-- Lead Card 7 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="AL" data-source="RD">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">RD-8355</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Indústria Metalúrgica Forte</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Carlos Alberto Dias</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 86.000</span>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-label-sm" title="André Lima">AL</div>
+</div>
+</div>
+<!-- Lead Card 8 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="JP" data-source="OB">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">OB-5480</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">FarmaVida Distribuidora</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Beatriz Moraes</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 52.000</span>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm" title="Juliana Pires">JP</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 4: Fechamento -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between px-1 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-title-md text-title-md text-on-surface">Fechamento</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm">2</span>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md px-1 pb-2">Subtotal: R$ 132.000</div>
+<div class="flex flex-col gap-space-sm" data-column="fechamento">
+<!-- Lead Card 9 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="CM" data-source="RD">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">RD-8211</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">AgroTech Cerrado S.A.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Henrique Bastos</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 95.000</span>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Camila Mendes">CM</div>
+</div>
+</div>
+<!-- Lead Card 10 -->
+<div class="lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3" data-owner="RS" data-source="IND">
+<div class="flex items-start justify-between gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">IND-0994</span>
+<button aria-label="Mais opções" class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">BPO Financeiro Prime</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Fernanda Costa</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-on-surface">R$ 37.000</span>
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Rafael Souza">RS</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- LIST VIEW (Hidden by default) -->
+<div class="hidden rounded-xl bg-surface-container-lowest shadow-sm overflow-x-auto" id="list-view">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-3 px-4">Empresa</th>
+<th class="py-3 px-4">Contato</th>
+<th class="py-3 px-4">Etapa</th>
+<th class="py-3 px-4">Origem</th>
+<th class="py-3 px-4">Valor Estimado</th>
+<th class="py-3 px-4">Responsável</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-4 font-label-lg text-label-lg">Grupo Horizonte Logística</td>
+<td class="py-3 px-4 text-on-surface-variant">Mariana Vasconcelos</td>
+<td class="py-3 px-4"><span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Novo Lead</span></td>
+<td class="py-3 px-4"><span class="font-label-md text-label-md text-on-surface-variant">RD-8492</span></td>
+<td class="py-3 px-4 font-label-lg text-label-lg">R$ 42.000</td>
+<td class="py-3 px-4">Camila Mendes</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-4 font-label-lg text-label-lg">Atacado Brasil Sul</td>
+<td class="py-3 px-4 text-on-surface-variant">Roberto Ferreira</td>
+<td class="py-3 px-4"><span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Contato Iniciado</span></td>
+<td class="py-3 px-4"><span class="font-label-md text-label-md text-on-surface-variant">RD-8410</span></td>
+<td class="py-3 px-4 font-label-lg text-label-lg">R$ 54.000</td>
+<td class="py-3 px-4">Juliana Pires</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-4 font-label-lg text-label-lg">Indústria Metalúrgica Forte</td>
+<td class="py-3 px-4 text-on-surface-variant">Carlos Alberto Dias</td>
+<td class="py-3 px-4"><span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Proposta Enviada</span></td>
+<td class="py-3 px-4"><span class="font-label-md text-label-md text-on-surface-variant">RD-8355</span></td>
+<td class="py-3 px-4 font-label-lg text-label-lg">R$ 86.000</td>
+<td class="py-3 px-4">André Lima</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-4 font-label-lg text-label-lg">AgroTech Cerrado S.A.</td>
+<td class="py-3 px-4 text-on-surface-variant">Henrique Bastos</td>
+<td class="py-3 px-4"><span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Fechamento</span></td>
+<td class="py-3 px-4"><span class="font-label-md text-label-md text-on-surface-variant">RD-8211</span></td>
+<td class="py-3 px-4 font-label-lg text-label-lg">R$ 95.000</td>
+<td class="py-3 px-4">Camila Mendes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quick New Lead Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-on-surface/40 backdrop-blur-sm p-space-md" id="new-lead-modal">
+<div class="w-full max-w-md rounded-xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Novo Lead</h2>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-low" onclick="closeNewLeadModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="addNewLead(event)">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Nome da Empresa</label>
+<input class="h-[38px] px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="input-company" placeholder="Ex: TechCorp Brasil" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Nome do Contato</label>
+<input class="h-[38px] px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="input-contact" placeholder="Ex: João Silva" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Valor Estimado (R$)</label>
+<input class="h-[38px] px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="input-value" placeholder="Ex: 35.000" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Tag de Origem</label>
+<input class="h-[38px] px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="input-tag" required="" type="text" value="RD-8501"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="h-9 px-4 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-colors" onclick="closeNewLeadModal()" type="button">Cancelar</button>
+<button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-colors" type="submit">Salvar Lead</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function switchView(view) {
+    const kanban = document.getElementById('kanban-view');
+    const list = document.getElementById('list-view');
+    const btnKanban = document.getElementById('btn-view-kanban');
+    const btnLista = document.getElementById('btn-view-lista');
+
+    if (view === 'kanban') {
+      kanban.classList.remove('hidden');
+      list.classList.add('hidden');
+      btnKanban.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btnKanban.classList.remove('text-on-surface-variant');
+      btnLista.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btnLista.classList.add('text-on-surface-variant');
+    } else {
+      kanban.classList.add('hidden');
+      list.classList.remove('hidden');
+      btnLista.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btnLista.classList.remove('text-on-surface-variant');
+      btnKanban.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btnKanban.classList.add('text-on-surface-variant');
+    }
+  }
+
+  function applyFilters() {
+    const owner = document.getElementById('filter-owner').value;
+    const source = document.getElementById('filter-source').value;
+    const cards = document.querySelectorAll('.lead-card');
+
+    cards.forEach(card => {
+      const matchOwner = owner === 'all' || card.dataset.owner === owner;
+      const matchSource = source === 'all' || card.dataset.source === source;
+      if (matchOwner && matchSource) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function resetFilters() {
+    document.getElementById('filter-owner').value = 'all';
+    document.getElementById('filter-source').value = 'all';
+    document.getElementById('filter-period').value = '30d';
+    applyFilters();
+  }
+
+  function openNewLeadModal() {
+    document.getElementById('new-lead-modal').classList.remove('hidden');
+  }
+
+  function closeNewLeadModal() {
+    document.getElementById('new-lead-modal').classList.add('hidden');
+  }
+
+  function addNewLead(e) {
+    e.preventDefault();
+    const company = document.getElementById('input-company').value;
+    const contact = document.getElementById('input-contact').value;
+    const value = document.getElementById('input-value').value;
+    const tag = document.getElementById('input-tag').value;
+
+    const col = document.querySelector('[data-column="novo"]');
+    const card = document.createElement('div');
+    card.className = 'lead-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col gap-3';
+    card.dataset.owner = 'CM';
+    card.dataset.source = 'RD';
+    card.innerHTML = `
+      <div class="flex items-start justify-between gap-2">
+        <span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">${tag}</span>
+        <button type="button" class="text-on-surface-variant hover:text-on-surface" aria-label="Mais opções">
+          <span class="material-symbols-outlined text-[18px]">more_horiz</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-0.5 min-w-0">
+        <h3 class="font-title-md text-title-md text-on-surface truncate">${company}</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant truncate">${contact}</p>
+      </div>
+      <div class="flex items-center justify-between pt-1">
+        <span class="font-label-lg text-label-lg text-on-surface">R$ ${value}</span>
+        <div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-label-sm" title="Camila Mendes">CM</div>
+      </div>
+    `;
+    col.prepend(card);
+    closeNewLeadModal();
+    e.target.reset();
+  }
+</script></main></div></body></html>

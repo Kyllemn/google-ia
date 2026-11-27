@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Vértice CRM</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#b8c4ff","secondary":"#3755c3","tertiary":"#943700","on-background":"#0b1c30","inverse-surface":"#213145","on-tertiary":"#ffffff","outline":"#737686","on-surface-variant":"#434655","surface":"#f8f9ff","on-secondary":"#ffffff","tertiary-container":"#bc4800","surface-container":"#e5eeff","error":"#ba1a1a","on-primary":"#ffffff","inverse-primary":"#b4c5ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-tertiary-fixed":"#360f00","on-tertiary-fixed-variant":"#7d2d00","surface-container-highest":"#d3e4fe","primary":"#004ac6","background":"#f8f9ff","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-primary-container":"#eeefff","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff","on-error-container":"#93000a","on-surface":"#0b1c30","on-secondary-fixed-variant":"#173bab","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#dce9ff","on-secondary-container":"#00217a","on-secondary-fixed":"#001453","on-primary-fixed-variant":"#003ea8","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb596","secondary-fixed":"#dde1ff","tertiary-fixed":"#ffdbcd","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","on-tertiary-container":"#ffede6","on-primary-fixed":"#00174b","secondary-container":"#708cfd","surface-dim":"#cbdbf5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"headline-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><span class="material-symbols-outlined text-primary">hub</span><span class="font-title-md text-title-md text-on-surface tracking-tight">Vértice CRM</span></div><nav class="flex-1 overflow-y-auto px-space-md py-space-lg space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Principal</div><div class="space-y-space-xs"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="receber-contatos" href="#"><span>Receber Contatos</span><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">12</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gerenciamento-de-leads" href="#"><span>Gerenciamento de Leads</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coletor-de-leads" href="#"><span>Coletor de Leads</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Carteiras</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-ativas" href="#"><span>Carteiras Ativas</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carteiras-inativas" href="#"><span>Carteiras Inativas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Financeiro &amp; Fiscal</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recuperacao-tributaria" href="#"><span>Recuperação Tributária</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="importacao-sped-xml" href="#"><span>Importação SPED / XML</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laudo-tecnico-memoria" href="#"><span>Laudo Técnico &amp; Memória</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="conciliacao-bancaria" href="#"><span>Conciliação Bancária</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Analytics</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="relatorios-e-metricas" href="#"><span>Relatórios &amp; Métricas</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">Administração</div><div class="space-y-space-xs"><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cadastro-de-usuarios" href="#"><span>Cadastro de Usuários</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes-gerais" href="#"><span>Configurações Gerais</span></a><a class="flex items-center px-space-sm py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant border border-dashed border-outline-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span>+ Novo Módulo / Configurações</span></a></div></div></nav></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Vértice CRM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpVmrahZvFruRmCCe0bw-sRsDVT_OktCHBz2nSlnqOvN4PodkawVbb6BFcHpiUoP7mjIJHd650oFGPxFqHZgGO3wsssERkiQYqafNatPlvfpVbbMSLWbjBTF0FtVU9CDhXYe0Cic4jbHPI9IQ-ps7wOTEJua9XIG-0-LVbEE2VLUJOCee_rAGrjkorhVRNVnHaCezCaykwHpbUOoyIiqSr7IQgPOg_YYxb-aa-5Dc3"/><span class="font-title-md text-title-md text-on-surface hidden lg:inline">Vértice CRM</span></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute left-3">search</span><input class="w-full h-[38px] pl-10 pr-4 rounded-xl bg-surface border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" placeholder="Buscar contatos, códigos ou empresas..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Filtros rápidos" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button aria-label="Notificações" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-px bg-outline-variant"></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCP9kE4KKoRBeL3MJTD_SeGHO0Pa097W9p4OCqJOf4dWJBlY97M8CzCjwvgZwqnumLQ2sfE6oEFy9vDHtGH1hT3axx-xZLrhFjrT6twmdslloNIeMxcjdRe06Zjm34mEPmN-Rmv9nXvVbMChKWfTmy3sipDi43esJw_fxBwZkozHtGFqeq2GsHeGuPNBf3NuYMbTYCbzvl1v0IeGn_KXPRYtak5R0o8c37_Z8M2Q1s"/></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Page Headings -->
+<section class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Financeiro &amp; Fiscal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Laudo Técnico &amp; Memória</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Laudo Técnico &amp; Memória de Cálculo</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Demonstrativo analítico fundamentado, memória de cálculo mensal e bases legais para compensação ou restituição administrativa/judicial.</p>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">description</span>
+<span>Exportar PDF</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">table_view</span>
+<span>Memória XLSX</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary-container text-on-primary-container hover:bg-primary transition-colors font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Assinar Digitalmente (e-CPF)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Context Selector Ribbon -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Empresa Habilitada</label>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">domain</span>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold truncate leading-none">Indústria Metalúrgica Ramos Ltda.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">CNPJ: 14.892.411/0001-92 • Regime: Lucro Real</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Tese Jurídica Fundamentada</label>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]">gavel</span>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold truncate leading-none">Exclusão do ICMS da base do PIS/COFINS</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Tema 69 STF • RE 574.706 • ICMS Destacado</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Período Auditado</label>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">calendar_month</span>
+<div>
+<p class="font-label-md text-label-md font-semibold leading-none">60 Meses</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">01/2019 a 12/2023</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 flex items-center justify-end">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-container rounded-full text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Auditado EFD-ICMS/IPI
+        </span>
+</div>
+</div>
+</div>
+<!-- Executive Summary Bento Cards -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Main Monetary Value Card -->
+<div class="md:col-span-5 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-on-primary/10 pointer-events-none blur-2xl"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Crédito Consolidado Apurado</span>
+<span class="px-2 py-0.5 rounded-full bg-on-primary/20 text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span> Pronto p/ PER/DCOMP
+          </span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-[34px] leading-tight font-bold tracking-tight text-on-primary">R$ 1.240.080,00</div>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-1">Montante total bruto atualizado pela SELIC acumulada até a data-base de apuração.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-md mt-space-md border-t border-on-primary/20">
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Indébito Principal (Original)</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-primary">R$ 984.320,00</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Atualização SELIC Acumulada</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-primary text-secondary-fixed">+ R$ 255.760,00</span>
+</div>
+</div>
+</div>
+<!-- Legal & Normative Grounding Card -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Enquadramento Normativo</span>
+<span class="material-symbols-outlined text-primary text-[20px]">balance</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface">RE 574.706 / Acórdão de Mérito STF</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cálculo estruturado estritamente sobre o <strong>ICMS destacado</strong> nas notas fiscais eletrônicas mod. 55, observando o Parecer SEI nº 14483/2021/ME e Instrução Normativa RFB nº 2.121/2022.</p>
+</div>
+<div class="space-y-1.5 pt-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm bg-surface-container-low px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface-variant">Prescrição Quinquenal:</span>
+<span class="font-semibold text-on-surface">Respeitada (60 meses)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm bg-surface-container-low px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface-variant">Vínculo DCTF / EFD:</span>
+<span class="font-semibold text-on-surface">100% Chaves de Acesso Validadas</span>
+</div>
+</div>
+</div>
+<!-- Expert Signature & CRC Compliance Card -->
+<div class="md:col-span-3 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Responsabilidade Técnica</span>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface leading-tight mt-0.5">Carlos Eduardo Silveira</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Perito Judicial Contábil</p>
+</div>
+</div>
+<div class="p- space-sm bg-surface-container-low rounded-xl p-3 my-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Registro CRC:</span>
+<span class="font-semibold text-on-surface">CRC/SP 1SP298.411/O-4</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mt-1">
+<span class="text-on-surface-variant">CNPC Peritos:</span>
+<span class="font-semibold text-on-surface">Nº 4.819</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mt-1">
+<span class="text-on-surface-variant">Laudo Emitido em:</span>
+<span class="font-semibold text-on-surface">18/02/2024 às 14:32</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Homologado e Auditado sem Ressalvas</span>
+</div>
+</div>
+</section>
+<!-- Interactive Monthly Calculation Ledger & Analytical Table -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg flex flex-col">
+<!-- Table Header Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Demonstrativo Analítico Mensal do Indébito</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detalhamento das notas de saída com exclusão linha a linha do tributo estadual.</p>
+</div>
+<!-- Competency Filter Buttons & Search -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-sm">Todos (60M)</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface">2023</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface">2022</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface">2021</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface">2020</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface">2019</button>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute left-2.5 top-2.5">filter_alt</span>
+<input class="pl-8 pr-3 py-1.5 text-body-sm font-body-sm bg-surface-container-low text-on-surface rounded-xl focus:outline-none focus:ring-1 focus:ring-primary w-48" placeholder="Filtrar mês ou CFOP..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[1040px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg font-semibold">Competência</th>
+<th class="py-2.5 px-3 text-right font-semibold">Faturamento Bruto (R$)</th>
+<th class="py-2.5 px-3 text-right font-semibold">Base Original PIS/COFINS</th>
+<th class="py-2.5 px-3 text-right text-tertiary font-semibold">(-) ICMS Destacado</th>
+<th class="py-2.5 px-3 text-right font-semibold">Base Retificada</th>
+<th class="py-2.5 px-3 text-center font-semibold">Alíquota</th>
+<th class="py-2.5 px-3 text-right font-semibold text-primary">Indébito Original</th>
+<th class="py-2.5 px-3 text-right font-semibold">Fator SELIC</th>
+<th class="py-2.5 px-3 text-right font-semibold text-on-surface">Crédito Final (R$)</th>
+<th class="py-2.5 px-3 text-center rounded-r-lg font-semibold">Comprovante</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 12/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.840.500,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.840.500,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">220.860,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.619.640,00</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">20.429,55</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">2,42%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">20.923,95</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm" title="Ver SPED e XMLs correlatos">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 11/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.750.000,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.750.000,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">210.000,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.540.000,00</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">19.425,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">3,34%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">20.073,79</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 10/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.920.400,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.920.400,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">230.448,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.689.952,00</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">21.316,44</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">4,34%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">22.241,57</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 09/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.680.120,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.680.120,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">201.614,40</td>
+<td class="py-2.5 px-3 text-right font-mono">1.478.505,60</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">18.649,33</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">5,31%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">19.639,61</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 08/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.890.000,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.890.000,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">226.800,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.663.200,00</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">20.979,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">6,45%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">22.332,15</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+<!-- Row 6 (Historical benchmark) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_today</span> 07/2023
+            </td>
+<td class="py-2.5 px-3 text-right font-mono">1.610.800,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.610.800,00</td>
+<td class="py-2.5 px-3 text-right font-mono text-tertiary font-medium">193.296,00</td>
+<td class="py-2.5 px-3 text-right font-mono">1.417.504,00</td>
+<td class="py-2.5 px-3 text-center font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-medium">9,25%</span>
+</td>
+<td class="py-2.5 px-3 text-right font-mono font-semibold text-primary">17.879,88</td>
+<td class="py-2.5 px-3 text-right font-mono text-on-surface-variant">7,52%</td>
+<td class="py-2.5 px-3 text-right font-mono font-bold text-on-surface">19.224,45</td>
+<td class="py-2.5 px-3 text-center">
+<button class="text-primary hover:text-primary-container inline-flex items-center gap-0.5 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">attachment</span> SPED.txt
+              </button>
+</td>
+</tr>
+</tbody>
+<!-- Summary Totalizer Footer -->
+<tfoot class="bg-surface-container-low font-label-md text-label-md text-on-surface">
+<tr>
+<td class="py-3 px-3 font-bold uppercase">Totais (60 Competências)</td>
+<td class="py-3 px-3 text-right font-mono font-semibold">88.450.210,00</td>
+<td class="py-3 px-3 text-right font-mono font-semibold">88.450.210,00</td>
+<td class="py-3 px-3 text-right font-mono font-bold text-tertiary">10.641.297,30</td>
+<td class="py-3 px-3 text-right font-mono font-semibold">77.808.912,70</td>
+<td class="py-3 px-3 text-center font-mono text-on-surface-variant">Méd. 9,25%</td>
+<td class="py-3 px-3 text-right font-mono font-bold text-primary">984.320,00</td>
+<td class="py-3 px-3 text-right font-mono text-secondary font-bold">+25,98% (Méd)</td>
+<td class="py-3 px-3 text-right font-mono font-bold text-[15px] text-on-surface bg-surface-container">R$ 1.240.080,00</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">60 Arquivos</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-primary"></span>
+<span>Exibindo 6 de 60 competências consolidadas. Paginação ativa.</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface disabled:opacity-50" disabled="">Anterior</button>
+<span class="px-2 py-1 font-semibold text-on-surface">Página 1 de 10</span>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface">Próxima</button>
+</div>
+</div>
+</section>
+<!-- Deep Dive Analytics: Evolution Chart & Expert Technical Notes -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Visual Curve Chart: Evolution of Monthly Credits vs. Selic Trend -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Evolução do Indébito &amp; Curva SELIC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comportamento do indébito principal mensal versus a curva de correção acumulada.</p>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="text-on-surface">Crédito Principal (R$)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="text-on-surface">SELIC Acumulada (%)</span>
+</div>
+</div>
+</div>
+<!-- Compact High-Precision SVG Chart -->
+<div class="w-full h-56 relative flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 200">
+<defs>
+<lineargradient id="chartGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#004ac6" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#004ac6" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Reference Grids -->
+<line opacity="0.4" stroke="#c3c6d7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="180" y2="180"></line>
+<line opacity="0.4" stroke="#c3c6d7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="120" y2="120"></line>
+<line opacity="0.4" stroke="#c3c6d7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="60" y2="60"></line>
+<!-- Bar Chart for Indebito Principal (Monthly Blocks) -->
+<g fill="#2563eb" opacity="0.85">
+<rect height="110" rx="3" width="24" x="30" y="70"></rect>
+<rect height="95" rx="3" width="24" x="80" y="85"></rect>
+<rect height="120" rx="3" width="24" x="130" y="60"></rect>
+<rect height="90" rx="3" width="24" x="180" y="90"></rect>
+<rect height="115" rx="3" width="24" x="230" y="65"></rect>
+<rect height="100" rx="3" width="24" x="280" y="80"></rect>
+<rect height="125" rx="3" width="24" x="330" y="55"></rect>
+<rect height="105" rx="3" width="24" x="380" y="75"></rect>
+<rect height="115" rx="3" width="24" x="430" y="65"></rect>
+<rect height="130" rx="3" width="24" x="480" y="50"></rect>
+<rect height="135" rx="3" width="24" x="530" y="45"></rect>
+</g>
+<!-- Spline Line for Selic Cumulative (%) -->
+<path d="M 42 165 C 100 155, 150 140, 200 125 C 250 110, 300 95, 350 75 C 400 55, 480 35, 542 25" fill="none" stroke="#3755c3" stroke-linecap="round" stroke-width="3"></path>
+<!-- Marker Nodes on Selic Curve -->
+<circle cx="42" cy="165" fill="#ffffff" r="4" stroke="#3755c3" stroke-width="2.5"></circle>
+<circle cx="200" cy="125" fill="#ffffff" r="4" stroke="#3755c3" stroke-width="2.5"></circle>
+<circle cx="350" cy="75" fill="#ffffff" r="4" stroke="#3755c3" stroke-width="2.5"></circle>
+<circle cx="542" cy="25" fill="#ffffff" r="4" stroke="#3755c3" stroke-width="2.5"></circle>
+</svg>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>Jan/2019 (Taxa Base Antiga)</span>
+<span>Jun/2021 (Julgamento Modulação STF)</span>
+<span>Dez/2023 (Encerramento Período)</span>
+</div>
+</div>
+<!-- Expert Notes, DCTF & PER/DCOMP Operational Checklist -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Diretrizes Operacionais de Habilitação</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Recomendações técnicas para transmissão na Receita Federal do Brasil (RFB).</p>
+<div class="space-y-space-sm">
+<div class="p- space-sm bg-surface-container-low rounded-xl p-3">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">1. Retificação de EFD-Contribuições</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Lançamento em Bloco M (M210/M610) com exclusão analítica das rubricas de ICMS da base.</p>
+</div>
+</div>
+</div>
+<div class="p- space-sm bg-surface-container-low rounded-xl p-3">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">2. Transmissão de DCTF Retificadoras</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ajuste do saldo a recolher mês a mês. O saldo devedor recalculado demonstrará o pagamento a maior.</p>
+</div>
+</div>
+</div>
+<div class="p- space-sm bg-surface-container-low rounded-xl p-3">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">sync_alt</span>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">3. Pedido PER/DCOMP Web</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Opção "Pagamento Indevido ou a Maior". Vinculação da SELIC calculada automaticamente via Webservice.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/70 -mx-space-lg -mb-space-lg px-space-lg py-space-md rounded-b-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hash SHA-256: 8f9b2d...1a4c8e</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold">Visualizar Termo de Conformidade</button>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Asset: Certified Audit Sign-off Banner -->
+<section class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover bg-surface-container-high shrink-0 shadow-inner" data-alt="Official digital signature stamp with notary seal and security cryptography graphic in cobalt blue tone, clean modern B2B tax technology interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASoP_4ftj_nfRMvz3pnkZJ26k2sg9rRE2YoSrBjnFbkl5f6s36l0NzxCTJP9RdR-WQ91iOA1domtePwdA8ihzZfZIsDKH0JL9RAGTEOkBpT-9fQD5zIPFs5wiN8UvF_HxhUto0kUtPY33XUYiSUHuXEaWxELRg_riO4XEpkGK3LMPKDuiPzxsxMMbGZuI4P-DYggN7ITZdocPuzIjMdmMLkvUj49guovstiKqNxXDi"/>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Laudo Certificado pelo Sistema Vértice Auditoria Fiscal v4.12</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Arquivo protegido contra alterações não autorizadas. Chave pública ICP-Brasil vinculada ao laudo pericial oficial da pessoa jurídica contratante.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto justify-end">
+<button class="w-full md:w-auto px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm">
+        Gerar Dossiê Completo em ZIP
+      </button>
+<button class="w-full md:w-auto px-4 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">send</span>
+        Transmitir para o Fiscal
+      </button>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic subtle highlight interaction on monthly rows
+  document.addEventListener("DOMContentLoaded", () => {
+    const rows = document.querySelectorAll("tbody tr");
+    rows.forEach(row => {
+      row.addEventListener("mouseenter", () => {
+        row.classList.add("cursor-pointer");
+      });
+    });
+  });
+</script></main></div></body></html>
