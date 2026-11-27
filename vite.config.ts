@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages: o site fica em https://kyllemn.github.io/google-ia/ (o workflow define GITHUB_PAGES)
+    base: process.env.GITHUB_PAGES ? '/google-ia/' : '/',
     plugins: [
       react(),
       tailwindcss(),
